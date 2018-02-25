@@ -10,7 +10,13 @@ module ``14: Reversing a list`` =
     [<Test>]
     let ``01 Reversing a list, the hard way`` () =
         let rev (xs : 'a list) : 'a list =
-            List.rev xs // write a function to reverse a list here.
+            let rec revList (l_n : int list) (l_o : int list) : int list =
+                match l_n with
+                | [] -> l_o
+                | frnt::bck -> (revList bck (frnt::l_o))
+            revList xs []
+            
+            // write a function to reverse a list here.
         rev [9;8;7] |> should equal [7;8;9]
         rev [] |> should equal []
         rev [0] |> should equal [0]

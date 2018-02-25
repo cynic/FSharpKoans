@@ -5,15 +5,17 @@ module ``20: Unit 00`` =
     [<Test>]
     let ``01 Unit is used when there is no return value for a function``() = 
         let sendData data = () //<-- a function which is invoked for its side-effect(s)
-        sendData "data" |> should equal ___ // ... don't overthink this one!
+        sendData "data" |> should equal () // ... don't overthink this one!
    
     [<Test>]
     let ``02 Unit, as an input, conveys no data`` () = 
         let sayHello () = "hello"
         let result = sayHello ()
-        sayHello |> should be ofType<FILL_ME_IN>
-        sayHello () |> should be ofType<FILL_ME_IN>
-        sayHello () |> should equal __
+        sayHello |> should be ofType<Unit -> string>
+        // Remember to use typing with CAPS where F# needs it instead of "C#" styles
+        // Also remember that for the typing a function has a map
+        sayHello () |> should be ofType<string>
+        sayHello () |> should equal "hello"
 
 (*
     When we develop real systems, we often run into problems
@@ -53,12 +55,12 @@ module ``20: Unit 00`` =
             match p < List.length scrollPositions && p >= 0 with
             | true -> scrollPositions.[p]
             | _ -> fun () -> "Nothing to do"
-        scrollPositions |> should be ofType<FILL_ME_IN>
-        getWorkAtPosition |> should be ofType<FILL_ME_IN>
-        getWorkAtPosition 3 |> should be ofType<FILL_ME_IN>
-        (getWorkAtPosition 3) () |> should be ofType<FILL_ME_IN>
-        getWorkAtPosition 250 |> should be ofType<FILL_ME_IN>
-        (getWorkAtPosition 250) () |> should be ofType<FILL_ME_IN>
+        scrollPositions |> should be ofType<Unit>
+        getWorkAtPosition |> should be ofType<int -> Unit -> string>
+        getWorkAtPosition 3 |> should be ofType<Unit -> string>
+        (getWorkAtPosition 3) () |> should be ofType<(Unit -> string)>
+        getWorkAtPosition 250 |> should be ofType<Unit -> string>
+        (getWorkAtPosition 250) () |> should be ofType<(Unit -> string)>
         (getWorkAtPosition 5) () |> should equal __
         (getWorkAtPosition -7) () |> should equal __
 

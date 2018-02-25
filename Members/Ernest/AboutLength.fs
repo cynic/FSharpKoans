@@ -41,7 +41,14 @@ module ``13: Finding the length of a list`` =
     [<Test>]
     let ``01 Finding the length of a list, the hard way`` () =
         let length (xs : 'a list) : int =
-            xs.Length // write a function to find the length of a list
+            let f x =
+                let rec getLen c xu =
+                    match xu with
+                    | [] -> c
+                    | front::back -> getLen (c+1) back
+                getLen 0 x
+            f xs
+            // write a function to find the length of a list
         length [9;8;7] |> should equal 3
         length [] |> should equal 0
         length ["Le Comte de Monte-Cristo"] |> should equal 1

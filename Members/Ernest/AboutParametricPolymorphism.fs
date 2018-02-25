@@ -100,12 +100,12 @@ module ``11: Parametric polymorphism`` =
         // how do you write a generic type?
         // Note: when type has been defined (types of variable in it in <'a, 'b>) we need to specify the types specifically to work on them
         a |> should be ofType<GenericDiscriminatedUnionExample<float, int>>
-        b |> should be ofType<GenericDiscriminatedUnionExample<bool, int>>
+        b |> should be ofType<GenericDiscriminatedUnionExample<'a, bool>>
 
     type MyDiscriminatedUnion =
-    | Furoth of FILL_ME_IN
+    | Furoth of int
     | Fevi
-    | Sxi of FILL_ME_IN
+    | Sxi of string
 
     [<Test>]
     let ``05 Creating a generic discriminated union (Part 2).`` () =
@@ -113,7 +113,7 @@ module ``11: Parametric polymorphism`` =
         let a = __
         let b = __
         let c = __
-        let d = __
+        let d = __   
         match a with
         | Furoth n -> n |> should equal 7
         | _ -> Assert.Fail ()

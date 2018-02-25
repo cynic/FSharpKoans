@@ -10,7 +10,7 @@ open NUnit.Framework
 
 
 module ``10: The Good Kind of Discrimination`` = 
-    open NHamcrest
+    //open NHamcrest
 
     type Subject = // <-- feel free to add your own subjects!
     | Philosophy

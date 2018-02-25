@@ -45,7 +45,6 @@ module ``12: Exploring your options`` =
 
     [<Test>]
     let ``01 Basic Option example`` () =
-        let QWER = getSurname "Taylor Swift"
         getSurname "Taylor Swift" |> should equal (Some "Swift") // Note the "Some" binding also brackets here
         getSurname "Eminem" |> should equal None
 

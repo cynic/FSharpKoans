@@ -55,7 +55,7 @@ module ``21: Sequences and Arrays`` =
     [<Test>]
     let ``01 Creating a sequence (Method 1).`` () =
         let a = Seq.init 10 id // this creates a finite sequence.
-        let b = __ // <-- should be a sequence going from 1..15 inclusive
+        let b = Seq.init 15 id // <-- should be a sequence going from 1..15 inclusive
         Seq.length b |> should equal 15
         Seq.head b |> should equal 1
 
@@ -65,7 +65,7 @@ module ``21: Sequences and Arrays`` =
         // (well, infinite enough...!  It might wrap around when we get to
         // the maximum value of a 32-bit signed integer.)
         let evenNumbers = Seq.initInfinite (fun n -> n*2)
-        let multiplesOfFive = __
+        let multiplesOfFive = Seq.initInfinite (fun pew -> pew*5)
         Seq.take 10 multiplesOfFive |> Seq.toList |> should equal [0;5;10;15;20;25;30;35;40;45]
         Seq.skip 1 multiplesOfFive |> Seq.head |> should equal 5
         Seq.skip 2139 multiplesOfFive |> Seq.head |> should equal 10695

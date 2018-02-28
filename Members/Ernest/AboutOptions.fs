@@ -14,8 +14,6 @@ There are many built-in functions which return an Option.
 *)
 
 module ``12: Exploring your options`` =
-    open FsUnit.TopLevelOperators
-
    (*
       The next function takes in a name and extracts the surname.
       But not all people have surnames!
@@ -45,7 +43,7 @@ module ``12: Exploring your options`` =
 
     [<Test>]
     let ``01 Basic Option example`` () =
-        getSurname "Taylor Swift" |> should equal (Some "Swift") // Note the "Some" binding also brackets here
+        getSurname "Taylor Swift" |> should equal (Some "Swift") // Careful with this: dont accidentally change something
         getSurname "Eminem" |> should equal None
 
     // the System.Int32.TryParse, System.Double.TryParse, etc functions return
@@ -55,20 +53,20 @@ module ``12: Exploring your options`` =
         let parse s =
             match System.Int32.TryParse s with
             | false, _ -> None
-            | true, _ -> Some s // <-- fill in the match cases
+            | true, a -> (Some a)
+            // <-- fill in the match cases
         parse "25" |> should equal (Some 25)
         parse "48" |> should equal (Some 48)
         parse "wut" |> should equal None
-    // Todo: above needs work
 
     [<Test>]
     let ``03 Remapping Option values`` () =
       let f n =
          match getSurname n with
-         | Some q -> q // <-- write good match cases
          | None -> "[no surname]"
+         | a -> a.Value
+         // <-- write good match cases
       f "Anubis" |> should equal "[no surname]"
       f "Niccolo Machiavelli" |> should equal "Machiavelli"
       f "Mara Jade" |> should equal "Jade"
       f "Khazad-Dum" |> should equal "[no surname]"
-    // Todo: above needs work

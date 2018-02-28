@@ -62,5 +62,6 @@ module ``24: About You`` =
     [<Test>]
     let ``Where to now?`` () =
         let resources = ["http://fsharpforfunandprofit.com"; "http://fssnip.net"; "http://stackoverflow.com"]
-        let visited = __ // <-- as you visit, add to a list here!
+        // Using those 3 will be what I do over a long while
+        let visited = [ "http://fsharpforfunandprofit.com" (* Using it with the next one for my study notes, will fill it in when I finish notes *); "http://fssnip.net" (* http://fssnip.net/bG kept coming up when doing koans, has interesting things*); "http://stackoverflow.com" (* Helped on several answers *)] // <-- as you visit, add to a list here!
         visited |> should equal resources

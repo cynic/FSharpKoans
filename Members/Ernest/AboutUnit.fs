@@ -55,14 +55,14 @@ module ``20: Unit 00`` =
             match p < List.length scrollPositions && p >= 0 with
             | true -> scrollPositions.[p]
             | _ -> fun () -> "Nothing to do"
-        scrollPositions |> should be ofType<Unit>
+        scrollPositions |> should be ofType<(Unit -> string) list>
         getWorkAtPosition |> should be ofType<int -> Unit -> string>
         getWorkAtPosition 3 |> should be ofType<Unit -> string>
-        (getWorkAtPosition 3) () |> should be ofType<(Unit -> string)>
+        (getWorkAtPosition 3) () |> should be ofType<string>
         getWorkAtPosition 250 |> should be ofType<Unit -> string>
-        (getWorkAtPosition 250) () |> should be ofType<(Unit -> string)>
-        (getWorkAtPosition 5) () |> should equal __
-        (getWorkAtPosition -7) () |> should equal __
+        (getWorkAtPosition 250) () |> should be ofType<string>
+        (getWorkAtPosition 5) () |> should equal "Load video"
+        (getWorkAtPosition -7) () |> should equal "Nothing to do"
 
     (*
         Sometimes we want to do something purely for a side-effect
@@ -75,7 +75,8 @@ module ``20: Unit 00`` =
     let ``04 The 'ignore' function is used to map anything to 'unit'`` () =
         let doSomethingForTheSideEffect x =
             // ...perform side effect...
+            // Do I add anything?
             x // return x
-        doSomethingForTheSideEffect 5 |> should equal __
-        ignore (doSomethingForTheSideEffect "blorp") |> should equal __
-        doSomethingForTheSideEffect 19.66 |> ignore |> should equal __
+        doSomethingForTheSideEffect 5 |> should equal 5
+        ignore (doSomethingForTheSideEffect "blorp") |> should equal ()
+        doSomethingForTheSideEffect 19.66 |> ignore |> should equal () // Note: this is into "ignore" Ernest

@@ -52,8 +52,14 @@ module ``15: Applying a map to a list`` =
     [<Test>]
     let ``03 Specified-function mapping, the hard way`` () =
         let map (f : 'a -> 'b) (xs : 'a list) : 'b list = 
-            let ans = List.map f xs
-            ans // write a map which applies f to each element
+            let rec myMap =
+                fun (f : 'a -> 'b) xxss (newXs : 'b list) ->
+                    match xxss with
+                    | [] -> newXs
+                    | head::tail -> myMap f tail (List.append newXs [(f head)])
+            (myMap f xs [])
+            //let ans = List.map f xs
+            //ans // write a map which applies f to each element
         map (fun x -> x+1) [9;8;7] |> should equal [10;9;8]
         map ((*) 2) [9;8;7] |> should equal [18;16;14]
         map (fun x -> sprintf "%.2f wut?" x)  [9.3; 1.22] |> should equal ["9.30 wut?"; "1.22 wut?"]

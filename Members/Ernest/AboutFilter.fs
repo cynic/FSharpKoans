@@ -9,7 +9,17 @@ module ``16: Filtering a list`` =
     [<Test>]
     let ``01 Fixed-function filtering, the hard way`` () =
         let filter (xs : int list) : int list =
-            List.filter (fun (x : int) -> x%2 = 1) xs // Note: brackets fight you, the single equals is "==" in C#, try remember
+            let rec doTheList =
+                fun (l: int list) (outl: int list) ->
+                    match l with
+                    | [] -> outl
+                    | head::tail ->
+                        match head%2 with
+                        | 1 ->
+                            doTheList tail (outl@[head])
+                        | _ -> doTheList tail outl
+            doTheList xs []
+                
             // write a function to filter for odd elements only.
         filter [1; 2; 3; 4] |> should equal [1; 3]
         filter [10; 9; 8; 7] |> should equal [9; 7]

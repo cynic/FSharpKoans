@@ -9,7 +9,11 @@ module ``15: Applying a map to a list`` =
     [<Test>]
     let ``01 Fixed-function mapping, the hard way (part 1).`` () =
         let map (xs : int list) : int list =
-            __ // write a function which adds 1 to each element
+            let rec inc_list (l : int list) (i : int) (z : int list): int list = // l is list, i is amount, z is the return list
+                match l with
+                | [] -> z
+                | happy::chappy -> (inc_list chappy (i) (List.append z [(happy+i)])) // Had to use List.append to do a "manual map" (aka. join 2 lists)
+            inc_list xs 1 []
         map [1; 2; 3; 4] |> should equal [2; 3; 4; 5]
         map [9; 8; 7; 6] |> should equal [10; 9; 8; 7]
         map [15; 2; 7] |> should equal [16; 3; 8]
@@ -19,7 +23,11 @@ module ``15: Applying a map to a list`` =
     [<Test>]
     let ``02 Fixed-function mapping, the hard way (part 2).`` () =
         let map (xs : int list) : int list =
-            __ // write a function which doubles each element
+            let rec bob_list (l : int list) (i : int) (z : int list): int list = // l is list, i is amount, z is the return list
+                match l with
+                | [] -> z
+                | sad::chappy -> (bob_list chappy (i) (List.append z [(sad*i)])) // Had to use List.append to do a "manual map" (aka. join 2 lists)
+            bob_list xs 2 []
         map [1; 2; 3; 4] |> should equal [2; 4; 6; 8]
         map [9; 8; 7; 6] |> should equal [18; 16; 14; 12]
         map [15; 2; 7] |> should equal [30; 4; 14]
@@ -37,8 +45,13 @@ module ``15: Applying a map to a list`` =
 
     [<Test>]
     let ``03 Specified-function mapping, the hard way`` () =
-        let map (f : 'a -> 'b) (xs : 'a list) : 'b list =
-            __ // write a map which applies f to each element
+        let map (f : 'a -> 'b) (xs : 'a list) : 'b list = 
+            let rec myMap =
+                fun (f : 'a -> 'b) xxss (newXs : 'b list) ->
+                    match xxss with
+                    | [] -> newXs
+                    | head::tail -> myMap f tail (List.append newXs [(f head)])
+            myMap f xs []
         map (fun x -> x+1) [9;8;7] |> should equal [10;9;8]
         map ((*) 2) [9;8;7] |> should equal [18;16;14]
         map (fun x -> sprintf "%.2f wut?" x)  [9.3; 1.22] |> should equal ["9.30 wut?"; "1.22 wut?"]
@@ -46,6 +59,8 @@ module ``15: Applying a map to a list`` =
     // Hint: https://msdn.microsoft.com/en-us/library/ee370378.aspx
     [<Test>]
     let ``04 Specified-function mapping, the easy way`` () =
-        __ (fun x -> x+1) [9;8;7] |> should equal [10;9;8]
-        __ ((*) 2) [9;8;7] |> should equal [18;16;14]
-        __ (fun x -> sprintf "%.2f wut?" x)  [9.3; 1.22] |> should equal ["9.30 wut?"; "1.22 wut?"]
+        List.map (fun x -> x+1) [9;8;7] |> should equal [10;9;8]
+        List.map ((*) 2) [9;8;7] |> should equal [18;16;14]
+        List.map (fun x -> sprintf "%.2f wut?" x)  [9.3; 1.22] |> should equal ["9.30 wut?"; "1.22 wut?"]
+
+    // Notes: these list's sets and maps are aweome, will be fun to use when needed (and confusing)

@@ -10,6 +10,8 @@ open NUnit.Framework
 
 
 module ``10: The Good Kind of Discrimination`` = 
+    //open NHamcrest
+
     type Subject = // <-- feel free to add your own subjects!
     | Philosophy
     | Linguistics
@@ -33,9 +35,9 @@ module ``10: The Good Kind of Discrimination`` =
         let aDegree = BSc (Linguistics, ComputerScience)
         let anotherDegree = BPharm
         let philosopherKing = Masters Philosophy
-        aDegree |> should be ofType<FILL_ME_IN> 
-        anotherDegree |> should be ofType<FILL_ME_IN> 
-        philosopherKing |> should be ofType<FILL_ME_IN> 
+        aDegree |> should be ofType<UndergraduateDegree> 
+        anotherDegree |> should be ofType<UndergraduateDegree> 
+        philosopherKing |> should be ofType<PostgraduateDegree> 
    
     [<Test>]
     let ``02 Creating & pattern-matching a discriminated union`` () = 
@@ -44,14 +46,14 @@ module ``10: The Good Kind of Discrimination`` =
             | BSc (_, ComputerScience) | BSc (ComputerScience, _) -> "Good choice!"
             | BSc _ -> "!!SCIENCE!!"
             | BPharm -> "Meh, it's OK."
-            | FILL_ME_IN -> "Money, money, money."
-            | FILL_ME_IN -> "A thinker, eh?"
-        randomOpinion __ |> should equal "Good choice!"
-        randomOpinion __ |> should equal "!!SCIENCE!!"
+            | BCom (_, _) -> "Money, money, money."
+            | BA (_, _) -> "A thinker, eh?"
+        randomOpinion (BSc (ComputerScience, Management)) |> should equal "Good choice!"
+        randomOpinion (BSc (Linguistics, Economics)) |> should equal "!!SCIENCE!!" //chose none BSc subjects for lol's
         randomOpinion (BCom (Management, Economics)) |> should equal "Money, money, money."
         randomOpinion (BCom (Linguistics, Management)) |> should equal "Money, money, money."
         randomOpinion (BA (Linguistics, Philosophy)) |> should equal "A thinker, eh?"
-        randomOpinion __ |> should equal "Meh, it's OK."
+        randomOpinion BPharm |> should equal "Meh, it's OK."
 
     type EquipmentStatus =
     | Available
@@ -60,8 +62,9 @@ module ``10: The Good Kind of Discrimination`` =
 
     [<Test>]
     let ``03 A discriminated union case with associated data is a function`` () =
-        Broken |> should be ofType<FILL_ME_IN>
-        Rented |> should be ofType<FILL_ME_IN>
+        Broken |> should be ofType<int -> EquipmentStatus>
+        Rented |> should be ofType<string -> EquipmentStatus>
+        // Note: like we learned before we must use "structures" that get used with the funtion's input to output
 
     type BinaryTree =
     | Empty
@@ -73,5 +76,11 @@ module ``10: The Good Kind of Discrimination`` =
             match x with
             | Empty -> 0
             | Node (_, a, b) -> 1 + max (depth a) (depth b)
-        let a = __ // <-- you may want to spread this over multiple lines and/or let-bindings ...!
+        // Referenced notes, memories and documentation: we declare the "Node" like creating a class variable "new" in C#
+        let b = Node("", BinaryTree.Empty, BinaryTree.Empty)
+        let c = Node("", b, BinaryTree.Empty)
+        let d = Node("", c, BinaryTree.Empty)
+        let a = Node("", d, BinaryTree.Empty) 
+        //let Q = depth a // Note: this was literally the "depth" of the union's "tree"
+        // <-- you may want to spread this over multiple lines and/or let-bindings ...!
         depth a |> should equal 4

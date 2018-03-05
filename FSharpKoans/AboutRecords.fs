@@ -25,7 +25,8 @@ type Book =
 module ``06: On the Record`` =
     [<Test>]
     let ``01 Creating records`` () =
-        let myRecord = __
+        // Q: do we actually specify type of Book/Pokemon ever? I assume it finds type itself. glanced down when typing this comment
+        let myRecord = { Title="Steelheart"; Author="Brandon Sanderson"; Year=2013 }
         myRecord.Title |> should equal "Steelheart"
         myRecord.Author |> should equal "Brandon Sanderson"
         myRecord.Year |> should equal 2013
@@ -39,15 +40,15 @@ module ``06: On the Record`` =
                 Author="Michel Foucault"
                 Year=1975
             }
-        myRecord |> should be ofType<FILL_ME_IN>
-        myOtherRecord |> should be ofType<FILL_ME_IN>
+        myRecord |> should be ofType<Pokemon>
+        myOtherRecord |> should be ofType<Book>
 
     [<Test>]
     let ``03 Decomposing with a record pattern`` () =
         let book = { Title="Dune"; Author="Frank Herbert"; Year=1965 }
-        let __ = book
-        __ |> should equal "Dune" // DO NOT use a . symbol in your answer
-        __ |> should equal 1965 // DO NOT use a . symbol in your answer
+        let { Title=myTitle; Author=_; Year=myYear } = book
+        myTitle |> should equal "Dune" // DO NOT use a . symbol in your answer
+        myYear |> should equal 1965 // DO NOT use a . symbol in your answer
 
     [<Test>]
     let ``04 Decomposing in a match expression`` () =
@@ -56,13 +57,13 @@ module ``06: On the Record`` =
             | { Name="Pikachu"; Attack=a } -> a/2
             | { Name="Raichu"; Attack=a } -> a/3
             | { Attack=blah; Defense=lol } -> (blah + lol) / 2
-        result |> should equal __
+        result |> should equal 30
 
     [<Test>]
     let ``05 Accessing record members using dot syntax`` () =
         let book = { Title="Tigana"; Author="Guy Gavriel Kay"; Year=1990 }
-        let k = __
-        let j = __
+        let k = book.Title
+        let j = book.Year
         k |> should equal "Tigana"
         j |> should equal 1990
 
@@ -71,7 +72,8 @@ module ``06: On the Record`` =
         let first = { Title="A Game of Thrones"; Author="George R. R. Martin"; Year=1996 }
         let second = { first with Title="A Clash of Kings"; Year=first.Year+2 } // <-- Pssst - see what I did here?
         let third = { second with Title="A Storm of Swords"; Year=2000 }
+        // We can see we can use singular properties, not like the _ I used in 03 above for Author
         let {Year=y0}, {Year=y1}, {Year=y2} = first, second, third
-        y0 |> should equal __
-        y1 |> should equal __
-        y2 |> should equal __
+        y0 |> should equal 1996
+        y1 |> should equal 1998
+        y2 |> should equal 2000

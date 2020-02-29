@@ -155,36 +155,38 @@ module ``02: About Binding`` =
 
     [<Test>]
     let ``08 An identifier pattern will match anything`` () =
-        let x = __ // replace with an integer
-        let y = __ // replace with a string
-        let z = __ // replace with anything else!
+        let x = 2 // replace with an integer
+        let y = "doh" // replace with a string
+        let z = 'l' // replace with anything else!
         x |> should be ofType<int>
         y |> should be ofType<string>
 
     [<Test>]
     let ``09 A wildcard pattern will match anything`` () =
-        let _ = __ // replace with an integer
-        let _ = __ // replace with a string
-        let _ = __ // replace with anything else!
+        let _ = 5 // replace with an integer
+        let _ = "" // replace with a string
+        let _ = 2.2 // replace with anything else!
         ()
 
     [<Test>]
     let ``10 Constant patterns succeed if both sides match`` () =
-        let 900 = __
-        let "Can't win all the time" = __
+        let 900 = 900
+        let "Can't win all the time" = "Can't win all the time"
         ()
 
     [<Test>]
     let ``11 Constant patterns fail if the sides don't match exactly`` () =
         // fill in something below, on the right-hand side, to make this pattern FAIL
         (fun () ->
-            let "FILL ME IN" = FILL__ME_IN
+            let "FILL ME IN" = "Creating errors"
             ()
         ) |> should throw typeof<MatchFailureException>
 
     [<Test>]
     let ``12 Or patterns succeed if any pattern matches`` () =
-        let a | a = __
-        let 7 | 13 | 2 = 3 + __
-        let 'x' | _ | 'p' = __
+        let a | a = 2
+        let 7 | 13 | 2 = 3 + 10
+        let 'x' | _ | 'p' = 'a'
         ()
+
+        

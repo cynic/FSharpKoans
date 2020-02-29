@@ -1,4 +1,5 @@
 ﻿namespace FSharpKoans
+
 open NUnit.Framework
 
 (*
@@ -10,62 +11,70 @@ matches, then you get a MatchFailureException at runtime and you turn into a
 Sad Panda.
 *)
 
-module ``04: Match expressions`` = 
+module ``04: Match expressions`` =
     [<Test>]
-    let ``01 Basic match expression`` () =
+    let ``01 Basic match expression``() =
         match 8000 with
-        | FILL_ME__IN -> "Insufficient power-level"
+        | 8000 -> "Insufficient power-level"
         ()
 
     [<Test>]
-    let ``02 Match expressions are expressions, not statements`` () =
+    let ``02 Match expressions are expressions, not statements``() =
         let result =
             match 9001 with
-            | FILL_ME__IN -> // <-- use an identifier pattern here!
-                match __ + 1000 with // <-- now use the identifier that you've bound
+            | x ->
+                match x + 1000 with
                 | 10001 -> "Hah! It's a palindromic number!"
                 | x -> "Some number."
             | x -> "I should have matched the other expression."
         result |> should equal "Hah! It's a palindromic number!"
 
     [<Test>]
-    let ``03 Shadowing in match expressions`` () =
+    let ``03 Shadowing in match expressions``() =
         let x = 213
         let y = 19
         match x with
         | 100 -> ()
         | 19 -> ()
         | y ->
-            y |> should equal __
-            x |> should equal __
-        y |> should equal __
-        x |> should equal __
+            y |> should equal 213
+            x |> should equal 213
+        y |> should equal 19
+        x |> should equal 213
 
     [<Test>]
-    let ``04 Match order in match expressions`` () =
+    let ``04 Match order in match expressions``() =
         let x = 213
         let y = 19
+
         let z =
             match x with
             | 100 -> "Kite"
             | 19 -> "Smite"
             | 213 -> "Bite"
             | y -> "Light"
-        let a = 
+
+        let a =
             match x with
             | 100 -> "Kite"
             | 19 -> "Smite"
             | y -> "Trite"
             | 213 -> "Light"
-        x |> should equal __
-        y |> should equal __
-        z |> should equal __
-        a |> should equal __
+
+        x |> should equal 213
+        y |> should equal 19
+        z |> should equal "Bite"
+        a |> should equal "Trite"
 
     [<Test>]
-    let ``05 Using a mapping function`` () =
-        let mapper = function
-            | _ -> __ // write the cases for this function!
+    let ``05 Using a mapping function``() =
+        let mapper =
+            function
+            | 3 -> "Joey" // write the cases for this function!
+            | 8 -> "Bingo"
+            | 11
+            | 15 -> "Kelvin"
+            | _ -> "Bingo"
         mapper 3 |> should equal "Joey"
         mapper 8 |> should equal "Bingo"
         mapper 11 |> should equal "Kelvin"
@@ -78,15 +87,16 @@ module ``04: Match expressions`` =
     *)
 
     [<Test>]
-    let ``06 Using an OR-pattern`` () =
+    let ``06 Using an OR-pattern``() =
         let f input =
             match input with
-            | "wut" | "lol" -> "yolo"
+            | "wut"
+            | "lol" -> "yolo"
             | "sunrise"
             | "sunset" -> "transition"
-            | FILL__ME_IN
-            | FILL__ME_IN
-            | FILL__ME_IN -> "failure"
+            | "Johnny Walker"
+            | "Bell's"
+            | "vodka" -> "failure"
             | _ -> "lolwut"
         f "lol" |> should equal "yolo"
         f "wut" |> should equal "yolo"
@@ -95,14 +105,14 @@ module ``04: Match expressions`` =
         f "vodka" |> should equal "failure"
 
     [<Test>]
-    let ``07 Identifiers bound on all branches of an OR-pattern must be the same`` () =
+    let ``07 Identifiers bound on all branches of an OR-pattern must be the same``() =
         let f input =
             match input with
-            | 0,0 -> "Both 0"
-            | ___ | ___ -> sprintf "One 0, one %d" __
+            | 0, 0 -> "Both 0"
+            | x, 0
+            | 0, x -> sprintf "One 0, one %d" x
             | _ -> "No 0"
-        f (3,0) |> should equal "One 0, one 3"
+        f (3, 0) |> should equal "One 0, one 3"
         f (0, 4) |> should equal "One 0, one 4"
         f (9, 5) |> should equal "No 0"
         f (0, 0) |> should equal "Both 0"
-

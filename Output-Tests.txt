@@ -1,614 +1,188 @@
-﻿[2020/02/27 14:12:15 Informational] ------ Discover test started ------
-[2020/02/27 14:12:37 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:12:40 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:12:40 Informational] ========== Discover test finished: 0 found (0:00:24,3380852) ==========
-[2020/02/27 14:12:56 Informational] ------ Discover test started ------
-[2020/02/27 14:12:57 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:12:57 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:13:01 Informational] ========== Discover test finished: 144 found (0:00:05,5037827) ==========
-[2020/02/27 14:13:01 Informational] ------ Discover test started ------
-[2020/02/27 14:13:02 Informational] ========== Discover test finished: 0 found (0:00:00,5104133) ==========
-[2020/02/27 14:13:03 Informational] ------ Discover test started ------
-[2020/02/27 14:13:04 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:13:04 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:13:05 Informational] ========== Discover test finished: 144 found (0:00:01,6338766) ==========
-[2020/02/27 14:13:05 Informational] ------ Run test started ------
-[2020/02/27 14:13:05 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:13:05 Informational] Running all tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:13:06 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:13:07 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:13:07 Informational] ========== Run test finished: 144 run (0:00:02,2126982) ==========
-[2020/02/27 14:15:40 Informational] ------ Discover test started ------
-[2020/02/27 14:15:41 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:15:41 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:15:41 Informational] ========== Discover test finished: 144 found (0:00:01,1665665) ==========
-[2020/02/27 14:15:42 Informational] ------ Run test started ------
-[2020/02/27 14:15:42 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:15:42 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:15:42 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:15:43 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:15:43 Informational] ========== Run test finished: 1 run (0:00:01,0766885) ==========
-[2020/02/27 14:16:04 Informational] ------ Discover test started ------
-[2020/02/27 14:16:05 Informational] ========== Discover test finished: 0 found (0:00:00,817262) ==========
-[2020/02/27 14:16:15 Informational] ------ Discover test started ------
-[2020/02/27 14:16:16 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:16:16 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:16:16 Informational] ========== Discover test finished: 144 found (0:00:01,2115164) ==========
-[2020/02/27 14:16:16 Informational] ------ Run test started ------
-[2020/02/27 14:16:16 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:16:17 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:16:17 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:16:17 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:16:17 Informational] ========== Run test finished: 1 run (0:00:00,9430258) ==========
-[2020/02/27 14:16:33 Informational] ------ Discover test started ------
-[2020/02/27 14:16:34 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:16:34 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:16:35 Informational] ========== Discover test finished: 144 found (0:00:01,4511665) ==========
-[2020/02/27 14:16:35 Informational] ------ Run test started ------
-[2020/02/27 14:16:35 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:16:35 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:16:35 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:16:36 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:16:36 Informational] ========== Run test finished: 1 run (0:00:01,0476134) ==========
-[2020/02/27 14:16:47 Informational] ------ Discover test started ------
-[2020/02/27 14:16:48 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:16:48 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:16:48 Informational] ========== Discover test finished: 144 found (0:00:00,9399656) ==========
-[2020/02/27 14:16:48 Informational] ------ Run test started ------
-[2020/02/27 14:16:49 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:16:49 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:16:49 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:16:49 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:16:49 Informational] ========== Run test finished: 1 run (0:00:00,9483191) ==========
-[2020/02/27 14:18:32 Informational] ------ Discover test started ------
-[2020/02/27 14:18:33 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:18:33 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:18:33 Informational] ========== Discover test finished: 144 found (0:00:01,1819241) ==========
-[2020/02/27 14:18:33 Informational] ------ Run test started ------
-[2020/02/27 14:18:34 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:18:34 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:18:34 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:18:34 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:18:34 Informational] ========== Run test finished: 1 run (0:00:00,9751332) ==========
-[2020/02/27 14:18:51 Informational] ------ Discover test started ------
-[2020/02/27 14:18:51 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:18:51 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:18:52 Informational] ========== Discover test finished: 144 found (0:00:01,4516296) ==========
-[2020/02/27 14:18:52 Informational] ------ Run test started ------
-[2020/02/27 14:18:53 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:18:53 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:18:53 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:18:53 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:18:53 Informational] ========== Run test finished: 1 run (0:00:00,9327352) ==========
-[2020/02/27 14:19:42 Informational] ------ Discover test started ------
-[2020/02/27 14:19:43 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:19:43 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:19:43 Informational] ========== Discover test finished: 144 found (0:00:01,0182959) ==========
-[2020/02/27 14:19:43 Informational] ------ Run test started ------
-[2020/02/27 14:19:44 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:19:44 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:19:44 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:19:44 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:19:44 Informational] ========== Run test finished: 1 run (0:00:01,0254959) ==========
-[2020/02/27 14:20:36 Informational] ------ Discover test started ------
-[2020/02/27 14:20:37 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:20:37 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:20:37 Informational] ========== Discover test finished: 144 found (0:00:01,2618406) ==========
-[2020/02/27 14:20:37 Informational] ------ Run test started ------
-[2020/02/27 14:20:37 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:20:37 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:20:38 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:20:38 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:20:38 Informational] ========== Run test finished: 1 run (0:00:01,0592144) ==========
-[2020/02/27 14:22:08 Informational] ------ Discover test started ------
-[2020/02/27 14:22:11 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:22:11 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:22:11 Informational] ========== Discover test finished: 144 found (0:00:02,941693) ==========
-[2020/02/27 14:22:11 Informational] ------ Run test started ------
-[2020/02/27 14:22:11 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:22:11 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:22:12 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:22:12 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:22:12 Informational] ========== Run test finished: 1 run (0:00:01,0020992) ==========
-[2020/02/27 14:24:28 Informational] ------ Discover test started ------
-[2020/02/27 14:24:29 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:24:29 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:24:29 Informational] ========== Discover test finished: 144 found (0:00:01,1719605) ==========
-[2020/02/27 14:24:29 Informational] ------ Run test started ------
-[2020/02/27 14:24:30 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:24:30 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:24:30 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:24:30 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:24:30 Informational] ========== Run test finished: 1 run (0:00:00,9315967) ==========
-[2020/02/27 14:25:00 Warning] Build failed or it was cancelled.
-[2020/02/27 14:25:21 Informational] ------ Discover test started ------
-[2020/02/27 14:25:22 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:25:23 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:25:23 Informational] ========== Discover test finished: 144 found (0:00:01,1783907) ==========
-[2020/02/27 14:25:23 Informational] ------ Run test started ------
-[2020/02/27 14:25:23 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:25:23 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:25:23 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:25:24 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:25:24 Informational] ========== Run test finished: 1 run (0:00:00,9726782) ==========
-[2020/02/27 14:29:01 Informational] ------ Discover test started ------
-[2020/02/27 14:29:02 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:29:02 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:29:02 Informational] ========== Discover test finished: 144 found (0:00:01,0404202) ==========
-[2020/02/27 14:29:02 Informational] ------ Run test started ------
-[2020/02/27 14:29:02 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:29:02 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:29:03 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:29:03 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:29:03 Informational] ========== Run test finished: 1 run (0:00:00,949005) ==========
-[2020/02/27 14:33:08 Informational] ------ Discover test started ------
-[2020/02/27 14:33:09 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:33:09 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:33:09 Informational] ========== Discover test finished: 144 found (0:00:01,1211637) ==========
-[2020/02/27 14:33:09 Informational] ------ Run test started ------
-[2020/02/27 14:33:09 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:33:09 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:33:10 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:33:10 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:33:10 Informational] ========== Run test finished: 1 run (0:00:01,0268645) ==========
-[2020/02/27 14:33:30 Informational] ------ Discover test started ------
-[2020/02/27 14:33:31 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:33:31 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:33:31 Informational] ========== Discover test finished: 144 found (0:00:01,0412155) ==========
-[2020/02/27 14:33:31 Informational] ------ Run test started ------
-[2020/02/27 14:33:31 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:33:31 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:33:32 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:33:32 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:33:32 Informational] ========== Run test finished: 1 run (0:00:01,0068643) ==========
-[2020/02/27 14:34:39 Informational] ------ Discover test started ------
-[2020/02/27 14:34:40 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:34:40 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:34:40 Informational] ========== Discover test finished: 144 found (0:00:01,057664) ==========
-[2020/02/27 14:34:40 Informational] ------ Run test started ------
-[2020/02/27 14:34:41 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:34:41 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:34:41 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:34:41 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:34:41 Informational] ========== Run test finished: 1 run (0:00:01,0516777) ==========
-[2020/02/27 14:35:13 Informational] ------ Discover test started ------
-[2020/02/27 14:35:14 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:35:15 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:35:15 Informational] ========== Discover test finished: 144 found (0:00:01,5449213) ==========
-[2020/02/27 14:35:15 Informational] ------ Run test started ------
-[2020/02/27 14:35:15 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:35:16 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:35:16 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:35:16 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:35:16 Informational] ========== Run test finished: 1 run (0:00:01,0093288) ==========
-[2020/02/27 14:35:48 Informational] ------ Discover test started ------
-[2020/02/27 14:35:48 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:35:49 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:35:49 Informational] ========== Discover test finished: 144 found (0:00:01,0021709) ==========
-[2020/02/27 14:35:49 Informational] ------ Run test started ------
-[2020/02/27 14:35:49 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:35:49 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:35:49 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:35:50 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:35:50 Informational] ========== Run test finished: 1 run (0:00:00,8832277) ==========
-[2020/02/27 14:36:10 Informational] ------ Discover test started ------
-[2020/02/27 14:36:11 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:36:11 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:36:11 Informational] ========== Discover test finished: 144 found (0:00:01,2121343) ==========
-[2020/02/27 14:36:11 Informational] ------ Run test started ------
-[2020/02/27 14:36:12 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:36:12 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:36:12 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:36:12 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:36:12 Informational] ========== Run test finished: 1 run (0:00:01,041273) ==========
-[2020/02/27 14:36:15 Informational] ------ Run test started ------
-[2020/02/27 14:36:16 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:36:16 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:36:16 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:36:16 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:36:16 Informational] ========== Run test finished: 1 run (0:00:00,9678481) ==========
-[2020/02/27 14:36:44 Informational] ------ Discover test started ------
-[2020/02/27 14:36:45 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:36:45 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:36:45 Informational] ========== Discover test finished: 144 found (0:00:01,0043056) ==========
-[2020/02/27 14:36:45 Informational] ------ Run test started ------
-[2020/02/27 14:36:46 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:36:46 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:36:46 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:36:46 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:36:46 Informational] ========== Run test finished: 1 run (0:00:01,0921371) ==========
-[2020/02/27 14:37:18 Informational] ------ Discover test started ------
-[2020/02/27 14:37:19 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:37:19 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:37:19 Informational] ========== Discover test finished: 144 found (0:00:01,1400424) ==========
-[2020/02/27 14:37:19 Informational] ------ Run test started ------
-[2020/02/27 14:37:19 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:37:19 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:37:20 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:37:20 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:37:20 Informational] ========== Run test finished: 1 run (0:00:00,9405375) ==========
-[2020/02/27 14:42:27 Informational] ------ Discover test started ------
-[2020/02/27 14:42:28 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:42:28 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:42:28 Informational] ========== Discover test finished: 144 found (0:00:01,0921321) ==========
-[2020/02/27 14:42:28 Informational] ------ Run test started ------
-[2020/02/27 14:42:29 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:42:29 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:42:29 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:42:29 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:42:29 Informational] ========== Run test finished: 1 run (0:00:01,0993022) ==========
-[2020/02/27 14:43:39 Informational] ------ Discover test started ------
-[2020/02/27 14:43:40 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:43:40 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:43:40 Informational] ========== Discover test finished: 144 found (0:00:01,0386064) ==========
-[2020/02/27 14:43:40 Informational] ------ Run test started ------
-[2020/02/27 14:43:40 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:43:40 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:43:41 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:43:41 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:43:41 Informational] ========== Run test finished: 2 run (0:00:00,919581) ==========
-[2020/02/27 14:44:35 Warning] Build failed or it was cancelled.
-[2020/02/27 14:44:47 Warning] Build failed or it was cancelled.
-[2020/02/27 14:45:28 Informational] ------ Discover test started ------
-[2020/02/27 14:45:28 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:45:29 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:45:29 Informational] ========== Discover test finished: 144 found (0:00:01,0381205) ==========
-[2020/02/27 14:45:29 Informational] ------ Run test started ------
-[2020/02/27 14:45:29 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:45:29 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:45:29 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:45:30 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:45:30 Informational] ========== Run test finished: 3 run (0:00:01,0308358) ==========
-[2020/02/27 14:45:58 Informational] ------ Discover test started ------
-[2020/02/27 14:45:59 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:45:59 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:45:59 Informational] ========== Discover test finished: 144 found (0:00:01,2133766) ==========
-[2020/02/27 14:45:59 Informational] ------ Run test started ------
-[2020/02/27 14:46:00 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:46:00 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:46:00 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:46:00 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:46:00 Informational] ========== Run test finished: 1 run (0:00:00,9377543) ==========
-[2020/02/27 14:46:48 Informational] ------ Discover test started ------
-[2020/02/27 14:46:49 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:46:49 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:46:50 Informational] ========== Discover test finished: 144 found (0:00:01,2592469) ==========
-[2020/02/27 14:46:50 Informational] ------ Run test started ------
-[2020/02/27 14:46:50 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:46:50 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:46:50 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:46:51 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:46:51 Informational] ========== Run test finished: 2 run (0:00:00,9499087) ==========
-[2020/02/27 14:47:48 Informational] ------ Discover test started ------
-[2020/02/27 14:47:49 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:47:50 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:47:50 Informational] ========== Discover test finished: 144 found (0:00:01,1835765) ==========
-[2020/02/27 14:47:50 Informational] ------ Run test started ------
-[2020/02/27 14:47:50 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:47:50 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:47:50 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:47:50 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:47:51 Informational] ========== Run test finished: 2 run (0:00:00,9365289) ==========
-[2020/02/27 14:51:52 Warning] Build failed or it was cancelled.
-[2020/02/27 14:53:40 Informational] ------ Discover test started ------
-[2020/02/27 14:53:41 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:53:41 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:53:41 Informational] ========== Discover test finished: 144 found (0:00:01,0598604) ==========
-[2020/02/27 14:53:41 Informational] ------ Run test started ------
-[2020/02/27 14:53:42 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:53:42 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:53:42 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:53:42 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:53:42 Informational] ========== Run test finished: 1 run (0:00:00,9918699) ==========
-[2020/02/27 14:53:54 Informational] ------ Discover test started ------
-[2020/02/27 14:53:54 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:53:55 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:53:55 Informational] ========== Discover test finished: 144 found (0:00:00,9796522) ==========
-[2020/02/27 14:53:55 Informational] ------ Run test started ------
-[2020/02/27 14:53:55 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:53:55 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:53:56 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:53:56 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:53:56 Informational] ========== Run test finished: 1 run (0:00:00,9183163) ==========
-[2020/02/27 14:56:02 Informational] ------ Discover test started ------
-[2020/02/27 14:56:03 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:56:03 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:56:03 Informational] ========== Discover test finished: 144 found (0:00:01,0336029) ==========
-[2020/02/27 14:56:03 Informational] ------ Run test started ------
-[2020/02/27 14:56:04 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:56:04 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:56:04 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:56:04 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:56:04 Informational] ========== Run test finished: 1 run (0:00:01,110715) ==========
-[2020/02/27 14:56:38 Informational] ------ Discover test started ------
-[2020/02/27 14:56:39 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:56:39 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:56:39 Informational] ========== Discover test finished: 144 found (0:00:01,048121) ==========
-[2020/02/27 14:56:39 Informational] ------ Run test started ------
-[2020/02/27 14:56:40 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:56:40 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:56:40 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:56:40 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:56:40 Informational] ========== Run test finished: 1 run (0:00:01,0829307) ==========
-[2020/02/27 14:57:43 Informational] ------ Discover test started ------
-[2020/02/27 14:57:43 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:57:44 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:57:44 Informational] ========== Discover test finished: 144 found (0:00:01,0326953) ==========
-[2020/02/27 14:57:44 Informational] ------ Run test started ------
-[2020/02/27 14:57:44 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:57:44 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:57:45 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:57:45 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:57:45 Informational] ========== Run test finished: 1 run (0:00:01,0351587) ==========
-[2020/02/27 14:58:11 Informational] ------ Discover test started ------
-[2020/02/27 14:58:12 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:58:12 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:58:12 Informational] ========== Discover test finished: 144 found (0:00:01,1500605) ==========
-[2020/02/27 14:58:12 Informational] ------ Run test started ------
-[2020/02/27 14:58:13 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:58:13 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:58:13 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:58:13 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:58:13 Informational] ========== Run test finished: 1 run (0:00:01,1331218) ==========
-[2020/02/27 14:59:07 Informational] ------ Discover test started ------
-[2020/02/27 14:59:08 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:59:09 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:59:09 Informational] ========== Discover test finished: 144 found (0:00:01,2321575) ==========
-[2020/02/27 14:59:09 Informational] ------ Run test started ------
-[2020/02/27 14:59:09 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:59:09 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:59:09 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:59:10 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:59:10 Informational] ========== Run test finished: 1 run (0:00:01,0147959) ==========
-[2020/02/27 14:59:30 Informational] ------ Discover test started ------
-[2020/02/27 14:59:31 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:59:31 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:59:31 Informational] ========== Discover test finished: 144 found (0:00:01,108089) ==========
-[2020/02/27 14:59:31 Informational] ------ Run test started ------
-[2020/02/27 14:59:32 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:59:32 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:59:32 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:59:32 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:59:32 Informational] ========== Run test finished: 1 run (0:00:00,9414314) ==========
-[2020/02/27 14:59:51 Informational] ------ Discover test started ------
-[2020/02/27 14:59:52 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 14:59:52 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 14:59:52 Informational] ========== Discover test finished: 144 found (0:00:01,148614) ==========
-[2020/02/27 14:59:52 Informational] ------ Run test started ------
-[2020/02/27 14:59:53 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 14:59:53 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 14:59:53 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 14:59:53 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 14:59:53 Informational] ========== Run test finished: 1 run (0:00:01,0517457) ==========
-[2020/02/27 15:00:22 Informational] ------ Discover test started ------
-[2020/02/27 15:00:23 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:00:23 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:00:24 Informational] ========== Discover test finished: 144 found (0:00:01,1491852) ==========
-[2020/02/27 15:00:24 Informational] ------ Run test started ------
-[2020/02/27 15:00:24 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:00:24 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:00:24 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:00:24 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:00:25 Informational] ========== Run test finished: 1 run (0:00:00,9787419) ==========
-[2020/02/27 15:00:47 Informational] ------ Discover test started ------
-[2020/02/27 15:00:47 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:00:48 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:00:48 Informational] ========== Discover test finished: 144 found (0:00:01,0781672) ==========
-[2020/02/27 15:00:48 Informational] ------ Run test started ------
-[2020/02/27 15:00:48 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:00:48 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:00:49 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:00:49 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:00:49 Informational] ========== Run test finished: 1 run (0:00:01,131937) ==========
-[2020/02/27 15:02:31 Informational] ------ Discover test started ------
-[2020/02/27 15:02:31 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:02:31 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:02:32 Informational] ========== Discover test finished: 144 found (0:00:01,0420078) ==========
-[2020/02/27 15:02:32 Informational] ------ Run test started ------
-[2020/02/27 15:02:32 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:02:32 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:02:32 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:02:32 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:02:32 Informational] ========== Run test finished: 1 run (0:00:00,8898255) ==========
-[2020/02/27 15:09:30 Informational] ------ Discover test started ------
-[2020/02/27 15:09:31 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:09:31 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:09:31 Informational] ========== Discover test finished: 144 found (0:00:01,0245683) ==========
-[2020/02/27 15:09:31 Informational] ------ Run test started ------
-[2020/02/27 15:09:32 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:09:32 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:09:32 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:09:32 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:09:32 Informational] ========== Run test finished: 1 run (0:00:01,0188677) ==========
-[2020/02/27 15:10:09 Informational] ------ Discover test started ------
-[2020/02/27 15:10:09 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:10:10 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:10:10 Informational] ========== Discover test finished: 144 found (0:00:01,0104689) ==========
-[2020/02/27 15:10:10 Informational] ------ Run test started ------
-[2020/02/27 15:10:10 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:10:10 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:10:10 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:10:10 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:10:11 Informational] ========== Run test finished: 1 run (0:00:00,9020699) ==========
-[2020/02/27 15:12:09 Informational] ------ Discover test started ------
-[2020/02/27 15:12:10 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:12:10 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:12:10 Informational] ========== Discover test finished: 144 found (0:00:01,0342704) ==========
-[2020/02/27 15:12:10 Informational] ------ Run test started ------
-[2020/02/27 15:12:11 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:12:11 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:12:11 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:12:11 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:12:11 Informational] ========== Run test finished: 1 run (0:00:01,1326926) ==========
-[2020/02/27 15:12:39 Informational] ------ Discover test started ------
-[2020/02/27 15:12:40 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:12:40 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:12:40 Informational] ========== Discover test finished: 144 found (0:00:01,1814314) ==========
-[2020/02/27 15:12:40 Informational] ------ Run test started ------
-[2020/02/27 15:12:41 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:12:41 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:12:41 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:12:41 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:12:41 Informational] ========== Run test finished: 1 run (0:00:00,9713578) ==========
-[2020/02/27 15:15:15 Warning] Build failed or it was cancelled.
-[2020/02/27 15:18:48 Informational] ------ Discover test started ------
-[2020/02/27 15:18:48 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:18:49 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:18:49 Informational] ========== Discover test finished: 144 found (0:00:00,9683444) ==========
-[2020/02/27 15:18:49 Informational] ------ Run test started ------
-[2020/02/27 15:18:49 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:18:49 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:18:49 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:18:50 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:18:50 Informational] ========== Run test finished: 1 run (0:00:01,1194655) ==========
-[2020/02/27 15:19:25 Informational] ------ Discover test started ------
-[2020/02/27 15:19:26 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:19:26 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:19:26 Informational] ========== Discover test finished: 144 found (0:00:01,0022259) ==========
-[2020/02/27 15:19:26 Informational] ------ Run test started ------
-[2020/02/27 15:19:27 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:19:27 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:19:27 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:19:27 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:19:27 Informational] ========== Run test finished: 1 run (0:00:01,0725806) ==========
-[2020/02/27 15:25:34 Informational] ------ Discover test started ------
-[2020/02/27 15:25:35 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:25:35 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:25:35 Informational] ========== Discover test finished: 144 found (0:00:01,0290567) ==========
-[2020/02/27 15:25:35 Informational] ------ Run test started ------
-[2020/02/27 15:25:36 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:25:36 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:25:36 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:25:36 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:25:36 Informational] ========== Run test finished: 1 run (0:00:01,0848992) ==========
-[2020/02/27 15:25:58 Informational] ------ Discover test started ------
-[2020/02/27 15:25:59 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:25:59 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:25:59 Informational] ========== Discover test finished: 144 found (0:00:01,1732944) ==========
-[2020/02/27 15:25:59 Informational] ------ Run test started ------
-[2020/02/27 15:26:00 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:26:00 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:26:00 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:26:00 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:26:00 Informational] ========== Run test finished: 1 run (0:00:01,0976353) ==========
-[2020/02/27 15:29:52 Informational] ------ Discover test started ------
-[2020/02/27 15:29:53 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:29:53 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:29:53 Informational] ========== Discover test finished: 144 found (0:00:01,1448688) ==========
-[2020/02/27 15:29:53 Informational] ------ Run test started ------
-[2020/02/27 15:29:54 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:29:54 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:29:54 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:29:54 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:29:54 Informational] ========== Run test finished: 1 run (0:00:00,9102092) ==========
-[2020/02/27 15:30:37 Informational] ------ Discover test started ------
-[2020/02/27 15:30:38 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:30:38 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:30:38 Informational] ========== Discover test finished: 144 found (0:00:01,0596413) ==========
-[2020/02/27 15:30:38 Informational] ------ Run test started ------
-[2020/02/27 15:30:39 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:30:39 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:30:39 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:30:39 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:30:39 Informational] ========== Run test finished: 1 run (0:00:01,002649) ==========
-[2020/02/27 15:30:57 Informational] ------ Discover test started ------
-[2020/02/27 15:30:58 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:30:58 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:30:58 Informational] ========== Discover test finished: 144 found (0:00:00,9908434) ==========
-[2020/02/27 15:30:58 Informational] ------ Run test started ------
-[2020/02/27 15:30:58 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:30:58 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:30:59 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:30:59 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:30:59 Informational] ========== Run test finished: 1 run (0:00:01,0089483) ==========
-[2020/02/27 15:31:45 Informational] ------ Discover test started ------
-[2020/02/27 15:31:46 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:31:46 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:31:46 Informational] ========== Discover test finished: 144 found (0:00:01,0076939) ==========
-[2020/02/27 15:31:46 Informational] ------ Run test started ------
-[2020/02/27 15:31:47 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:31:47 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:31:47 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:31:47 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:31:47 Informational] ========== Run test finished: 1 run (0:00:00,8982642) ==========
-[2020/02/27 15:35:43 Informational] ------ Discover test started ------
-[2020/02/27 15:35:43 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:35:44 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:35:44 Informational] ========== Discover test finished: 144 found (0:00:01,0767369) ==========
-[2020/02/27 15:35:44 Informational] ------ Run test started ------
-[2020/02/27 15:35:44 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:35:44 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:35:45 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:35:45 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:35:45 Informational] ========== Run test finished: 1 run (0:00:00,983846) ==========
-[2020/02/27 15:35:54 Informational] ------ Discover test started ------
-[2020/02/27 15:35:55 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:35:55 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:35:55 Informational] ========== Discover test finished: 144 found (0:00:01,0015865) ==========
-[2020/02/27 15:35:55 Informational] ------ Run test started ------
-[2020/02/27 15:35:56 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:35:56 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:35:56 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:35:56 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:35:56 Informational] ========== Run test finished: 1 run (0:00:01,0480533) ==========
-[2020/02/27 15:36:13 Informational] ------ Discover test started ------
-[2020/02/27 15:36:14 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:36:14 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:36:14 Informational] ========== Discover test finished: 144 found (0:00:01,0289121) ==========
-[2020/02/27 15:36:14 Informational] ------ Run test started ------
-[2020/02/27 15:36:14 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:36:15 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:36:15 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:36:15 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:36:15 Informational] ========== Run test finished: 1 run (0:00:01,0394122) ==========
-[2020/02/27 15:36:51 Informational] ------ Discover test started ------
-[2020/02/27 15:36:52 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:36:52 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:36:53 Informational] ========== Discover test finished: 144 found (0:00:01,1918161) ==========
-[2020/02/27 15:36:53 Informational] ------ Run test started ------
-[2020/02/27 15:36:53 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:36:53 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:36:53 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:36:53 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:36:53 Informational] ========== Run test finished: 1 run (0:00:00,9783253) ==========
-[2020/02/27 15:42:12 Informational] ------ Discover test started ------
-[2020/02/27 15:42:13 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:42:14 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:42:14 Informational] ========== Discover test finished: 144 found (0:00:01,3112021) ==========
-[2020/02/27 15:42:14 Informational] ------ Run test started ------
-[2020/02/27 15:42:14 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:42:14 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:42:15 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:42:15 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:42:15 Informational] ========== Run test finished: 1 run (0:00:00,9132587) ==========
-[2020/02/27 15:45:03 Informational] ------ Discover test started ------
-[2020/02/27 15:45:04 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:45:04 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:45:05 Informational] ========== Discover test finished: 144 found (0:00:01,2607614) ==========
-[2020/02/27 15:45:05 Informational] ------ Run test started ------
-[2020/02/27 15:45:05 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:45:05 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:45:05 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:45:06 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:45:06 Informational] ========== Run test finished: 1 run (0:00:01,037607) ==========
-[2020/02/27 15:47:45 Informational] ------ Discover test started ------
-[2020/02/27 15:47:45 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:47:46 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:47:46 Informational] ========== Discover test finished: 144 found (0:00:01,0490114) ==========
-[2020/02/27 15:47:46 Informational] ------ Run test started ------
-[2020/02/27 15:47:46 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:47:46 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:47:47 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:47:47 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:47:47 Informational] ========== Run test finished: 1 run (0:00:01,1652963) ==========
-[2020/02/27 15:50:24 Warning] Build failed or it was cancelled.
-[2020/02/27 15:50:53 Informational] ------ Discover test started ------
-[2020/02/27 15:50:53 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
-[2020/02/27 15:50:54 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
-[2020/02/27 15:50:54 Informational] ========== Discover test finished: 144 found (0:00:01,026381) ==========
-[2020/02/27 15:50:54 Informational] ------ Run test started ------
-[2020/02/27 15:50:54 Informational] NUnit Adapter 3.11.0.0: Test execution started
-[2020/02/27 15:50:54 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
-[2020/02/27 15:50:54 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
-[2020/02/27 15:50:55 Informational] NUnit Adapter 3.11.0.0: Test execution complete
-[2020/02/27 15:50:55 Informational] ========== Run test finished: 1 run (0:00:00,9101535) ==========
+﻿[2020/03/05 14:10:40 Informational] ------ Discover test started ------
+[2020/03/05 14:10:46 Informational] ========== Discover test finished: 0 found (0:00:06,1603789) ==========
+[2020/03/05 14:10:59 Informational] ------ Discover test started ------
+[2020/03/05 14:11:00 Informational] ========== Discover test finished: 0 found (0:00:00,7199183) ==========
+[2020/03/05 14:11:00 Informational] ------ Discover test started ------
+[2020/03/05 14:11:03 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:11:04 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:11:04 Informational] ========== Discover test finished: 144 found (0:00:04,2646212) ==========
+[2020/03/05 14:11:13 Informational] ------ Run test started ------
+[2020/03/05 14:11:14 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:11:14 Informational] Running all tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:11:14 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:11:15 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:11:15 Informational] ========== Run test finished: 144 run (0:00:02,5551239) ==========
+[2020/03/05 14:12:01 Informational] ------ Discover test started ------
+[2020/03/05 14:12:02 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:12:03 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:12:03 Informational] ========== Discover test finished: 144 found (0:00:01,660865) ==========
+[2020/03/05 14:12:03 Informational] ------ Run test started ------
+[2020/03/05 14:12:03 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:12:03 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:12:04 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:12:04 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:12:04 Informational] ========== Run test finished: 2 run (0:00:01,0365943) ==========
+[2020/03/05 14:13:03 Informational] ------ Discover test started ------
+[2020/03/05 14:13:03 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:13:04 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:13:04 Informational] ========== Discover test finished: 144 found (0:00:01,4169528) ==========
+[2020/03/05 14:13:04 Informational] ------ Run test started ------
+[2020/03/05 14:13:05 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:13:05 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:13:05 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:13:05 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:13:05 Informational] ========== Run test finished: 1 run (0:00:01,0655295) ==========
+[2020/03/05 14:13:52 Informational] ------ Discover test started ------
+[2020/03/05 14:13:53 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:13:53 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:13:53 Informational] ========== Discover test finished: 144 found (0:00:01,4718823) ==========
+[2020/03/05 14:13:53 Informational] ------ Run test started ------
+[2020/03/05 14:13:54 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:13:54 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:13:54 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:13:54 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:13:54 Informational] ========== Run test finished: 1 run (0:00:00,9902963) ==========
+[2020/03/05 14:15:01 Informational] ------ Discover test started ------
+[2020/03/05 14:15:02 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:15:02 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:15:02 Informational] ========== Discover test finished: 144 found (0:00:01,194761) ==========
+[2020/03/05 14:15:02 Informational] ------ Run test started ------
+[2020/03/05 14:15:03 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:15:03 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:15:03 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:15:03 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:15:03 Informational] ========== Run test finished: 1 run (0:00:01,1568863) ==========
+[2020/03/05 14:15:43 Informational] ------ Discover test started ------
+[2020/03/05 14:15:44 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:15:44 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:15:44 Informational] ========== Discover test finished: 144 found (0:00:01,3851951) ==========
+[2020/03/05 14:15:44 Informational] ------ Run test started ------
+[2020/03/05 14:15:45 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:15:45 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:15:45 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:15:46 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:15:46 Informational] ========== Run test finished: 1 run (0:00:01,1101806) ==========
+[2020/03/05 14:26:17 Informational] ------ Run test started ------
+[2020/03/05 14:26:18 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:26:18 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:26:18 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:26:18 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:26:19 Informational] ========== Run test finished: 1 run (0:00:01,5591798) ==========
+[2020/03/05 14:30:24 Informational] ------ Discover test started ------
+[2020/03/05 14:30:25 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:30:25 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:30:25 Informational] ========== Discover test finished: 144 found (0:00:01,2188748) ==========
+[2020/03/05 14:30:25 Informational] ------ Run test started ------
+[2020/03/05 14:30:26 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:30:26 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:30:26 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:30:26 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:30:26 Informational] ========== Run test finished: 1 run (0:00:01,0665287) ==========
+[2020/03/05 14:32:11 Informational] ------ Discover test started ------
+[2020/03/05 14:32:12 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:32:12 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:32:12 Informational] ========== Discover test finished: 144 found (0:00:01,1369038) ==========
+[2020/03/05 14:32:12 Informational] ------ Run test started ------
+[2020/03/05 14:32:13 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:32:13 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:32:13 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:32:13 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:32:13 Informational] ========== Run test finished: 1 run (0:00:00,9889999) ==========
+[2020/03/05 14:33:14 Warning] Build failed or it was cancelled.
+[2020/03/05 14:33:25 Informational] ------ Discover test started ------
+[2020/03/05 14:33:25 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:33:26 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:33:26 Informational] ========== Discover test finished: 144 found (0:00:01,2679406) ==========
+[2020/03/05 14:33:26 Informational] ------ Run test started ------
+[2020/03/05 14:33:26 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:33:26 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:33:27 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:33:27 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:33:27 Informational] ========== Run test finished: 1 run (0:00:00,9573777) ==========
+[2020/03/05 14:34:46 Informational] ------ Discover test started ------
+[2020/03/05 14:34:47 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:34:47 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:34:47 Informational] ========== Discover test finished: 144 found (0:00:01,3927679) ==========
+[2020/03/05 14:34:47 Informational] ------ Run test started ------
+[2020/03/05 14:34:48 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:34:48 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:34:48 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:34:48 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:34:48 Informational] ========== Run test finished: 1 run (0:00:01,0342262) ==========
+[2020/03/05 14:35:04 Informational] ------ Run test started ------
+[2020/03/05 14:35:05 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:35:05 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:35:05 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:35:06 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:35:06 Informational] ========== Run test finished: 1 run (0:00:01,3957166) ==========
+[2020/03/05 14:36:40 Informational] ------ Discover test started ------
+[2020/03/05 14:36:41 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:36:41 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:36:41 Informational] ========== Discover test finished: 144 found (0:00:01,2721066) ==========
+[2020/03/05 14:36:41 Informational] ------ Run test started ------
+[2020/03/05 14:36:42 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:36:42 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:36:42 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:36:42 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:36:42 Informational] ========== Run test finished: 1 run (0:00:01,1637141) ==========
+[2020/03/05 14:40:21 Informational] ------ Discover test started ------
+[2020/03/05 14:40:22 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:40:23 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:40:23 Informational] ========== Discover test finished: 144 found (0:00:01,1494732) ==========
+[2020/03/05 14:40:23 Informational] ------ Run test started ------
+[2020/03/05 14:40:23 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:40:23 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:40:23 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:40:23 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:40:24 Informational] ========== Run test finished: 1 run (0:00:00,9933514) ==========
+[2020/03/05 14:46:14 Warning] Build failed or it was cancelled.
+[2020/03/05 14:46:35 Informational] ------ Discover test started ------
+[2020/03/05 14:46:36 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:46:37 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:46:37 Informational] ========== Discover test finished: 144 found (0:00:01,4515877) ==========
+[2020/03/05 14:46:37 Informational] ------ Run test started ------
+[2020/03/05 14:46:37 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:46:37 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:46:38 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:46:38 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:46:38 Informational] ========== Run test finished: 1 run (0:00:00,968064) ==========
+[2020/03/05 14:46:57 Informational] ------ Discover test started ------
+[2020/03/05 14:46:58 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:46:58 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:46:58 Informational] ========== Discover test finished: 144 found (0:00:01,1948369) ==========
+[2020/03/05 14:46:58 Informational] ------ Run test started ------
+[2020/03/05 14:46:59 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:46:59 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:46:59 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:46:59 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:46:59 Informational] ========== Run test finished: 1 run (0:00:01,1715057) ==========
+[2020/03/05 14:47:21 Informational] ------ Discover test started ------
+[2020/03/05 14:47:22 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:47:22 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:47:22 Informational] ========== Discover test finished: 144 found (0:00:01,1999511) ==========
+[2020/03/05 14:47:22 Informational] ------ Run test started ------
+[2020/03/05 14:47:23 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:47:23 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:47:23 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:47:23 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:47:23 Informational] ========== Run test finished: 1 run (0:00:01,0649576) ==========
+[2020/03/05 14:47:51 Informational] ------ Discover test started ------
+[2020/03/05 14:47:52 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:47:52 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:47:52 Informational] ========== Discover test finished: 144 found (0:00:01,3104174) ==========
+[2020/03/05 14:47:52 Informational] ------ Run test started ------
+[2020/03/05 14:47:53 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:47:53 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:47:53 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:47:53 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:47:53 Informational] ========== Run test finished: 1 run (0:00:01,0128348) ==========
+[2020/03/05 14:48:32 Informational] ------ Discover test started ------
+[2020/03/05 14:48:33 Informational] NUnit Adapter 3.11.0.0: Test discovery starting
+[2020/03/05 14:48:33 Informational] NUnit Adapter 3.11.0.0: Test discovery complete
+[2020/03/05 14:48:33 Informational] ========== Discover test finished: 144 found (0:00:01,2245301) ==========
+[2020/03/05 14:48:33 Informational] ------ Run test started ------
+[2020/03/05 14:48:34 Informational] NUnit Adapter 3.11.0.0: Test execution started
+[2020/03/05 14:48:34 Informational] Running selected tests in J:\Function Programming\Prac1\FSharpKoanss\FSharpKoans\FSharpKoans\bin\Debug\netcoreapp2.2\FSharpKoans.dll
+[2020/03/05 14:48:34 Informational]    NUnit3TestExecutor converted 144 of 144 NUnit test cases
+[2020/03/05 14:48:34 Informational] NUnit Adapter 3.11.0.0: Test execution complete
+[2020/03/05 14:48:35 Informational] ========== Run test finished: 6 run (0:00:01,0712555) ==========

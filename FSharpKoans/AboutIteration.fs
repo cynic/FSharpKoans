@@ -30,4 +30,4 @@ module ``05: To iterate is human; to recurse, divine`` =
                 | false -> -1 + inner (count+1)
             inner sq
 
-        myfun 12 |> should equal 
+        myfun 12 |> should equal 0

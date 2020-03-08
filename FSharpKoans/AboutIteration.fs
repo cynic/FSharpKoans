@@ -26,8 +26,8 @@ module ``05: To iterate is human; to recurse, divine`` =
             let v = sq*sq*sq*sq
             let rec inner count total =
                 match count = v with
-                | true -> 0
+                | true -> 0+total
                 | false -> inner (count+1) (total-1)
             inner sq 0
 
-        myfun 12 |> should equal 0
+        myfun 12 |> should equal -429981552

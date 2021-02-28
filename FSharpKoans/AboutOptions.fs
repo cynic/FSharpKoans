@@ -33,8 +33,10 @@ module ``09: Exploring types, options, and results`` =
    *)
     let getSurname (x:string) =
         match x.Trim().LastIndexOf ' ' with
-        | -1 -> None
-        | n -> Some x.[n+1..]
+        | -1 ->
+            None
+        | n ->
+            Some x.[n+1..]
     // why not just return -1 instead of None?  Well, -1 is a valid value
     // in the problem domain.  A programmer must remember to check
     // for the -1 value, and if this check is forgotten, then the program
@@ -44,8 +46,10 @@ module ``09: Exploring types, options, and results`` =
 
     [<Test>]
     let ``01 Type annotations for function types`` () =
-        let a (x:FILL_ME_IN) (y:FILL_ME_IN) = x + y
-        let b (x:FILL_ME_IN) (y:FILL_ME_IN) = x + y
+        let a (x:FILL_ME_IN) (y:FILL_ME_IN) =
+            x + y
+        let b (x:FILL_ME_IN) (y:FILL_ME_IN) =
+            x + y
         a |> should be ofType<string -> string -> string>
         b |> should be ofType<float -> float -> float>
         a __ __ |> should equal "skipping"
@@ -53,7 +57,8 @@ module ``09: Exploring types, options, and results`` =
 
     [<Test>]
     let ``02 We can use a type annotation for a function's output`` () =
-        let k a b : FILL_ME_IN = a * b
+        let k a b : FILL_ME_IN =
+            a * b
         k __ __ |> should equal 15.0 
 
     [<Test>]
@@ -66,8 +71,9 @@ module ``09: Exploring types, options, and results`` =
     [<Test>]
     let ``04 Parsing a string safely`` () =
         let parse (s:string) =
-            match System.Int32.TryParse s with
-            | _ -> __ // <-- fill in the match cases
+            match System.Int32.TryParse s with // now fill in all the match cases
+            | _ ->
+                __ 
         parse "25" |> should equal (Some 25)
         parse "48" |> should equal (Some 48)
         parse "wut" |> should equal None
@@ -75,22 +81,26 @@ module ``09: Exploring types, options, and results`` =
     [<Test>]
     let ``05 Remapping Option values`` () =
       let f n =
-         match getSurname n with
-         | _ -> __ // <-- write a bunch of good match cases
+         match getSurname n with // write a bunch of good match cases
+         | _ ->
+            __ 
       f "Anubis" |> should equal "[no surname]"
       f "Niccolo Machiavelli" |> should equal "Machiavelli"
       f "Mara Jade" |> should equal "Jade"
       f "Khazad-Dum" |> should equal "[no surname]"
 
     type ErrorReason =
-    | DivisionByZero | NegativeNumberSupplied
+    | DivisionByZero
+    | NegativeNumberSupplied
 
     [<Test>]
     let ``06 Using a Result to explain why things went wrong`` () =
         let f n m =
             match n<0.0, m=0.0 with
-            | true, _ -> Error NegativeNumberSupplied
-            | _, true -> __
+            | true, _ ->
+                Error NegativeNumberSupplied
+            | _, true ->
+                __
             | _ ->
                 // 'sqrt' is the square-root function
                 __ (sqrt n / m)

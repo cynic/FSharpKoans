@@ -34,7 +34,8 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``05 A function can be bound to a name (Part 1).`` () =
-        let one_third = fun ka -> ka / 3
+        let one_third =
+            fun ka -> ka / 3
         __ 21 |> should equal 7
 
     [<Test>]
@@ -45,15 +46,18 @@ module ``03: Putting the Function into Functional Programming`` =
     [<Test>]
     let ``07 A function can span multiple lines (Part 1).`` () =
         (fun zorro ->
-            let k = "swash" // notice the indentation.
-            let b = "buckle" // F# is whitespace-sensitive, so it is important!
-            zorro + " likes to " + k + b
+            let k =
+                "swash" // notice the indentation.
+            let b =
+                "buckle" // F# is whitespace-sensitive, so it is important!
+            $"{zorro} likes to {k}{b}"
         ) "Zorro the pirate" |> should equal __
 
     [<Test>]
     let ``08 A function can span multiple lines (Part 2).`` () =
         let jorus who =
-            let p = 5
+            let p =
+                5
             who * p
         jorus 12 |> should equal __
 
@@ -75,17 +79,24 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``10 A function can return a function (Part 1).`` () =
-        let i = fun love -> fun hate -> love - hate
-        // read the above as: fun love -> (fun hate -> (love - hate))
-        let j = i 10
-        let k = j 9
+        let i =
+            fun love ->
+                fun hate ->
+                    love - hate
+        let j =
+            i 10
+        let k =
+            j 9
         k |> should equal __
 
     [<Test>]
     let ``11 A function can return a function (Part 2).`` () =
-        let funky a b = a + b
-        let j = funky 10
-        let k = j 9
+        let funky a b =
+            a + b
+        let j =
+            funky 10
+        let k =
+            j 9
         k |> should equal __
 
     [<Test>]
@@ -98,9 +109,12 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``14 'Multiple-argument' functions are one-input, one-output in disguise`` () =
-      let i j k = j * k
-      let j = __ 4
-      let k = __ 12
+      let i j k =
+        j * k
+      let j =
+        __ 4
+      let k =
+        __ 12
       k |> should equal 48
 
     [<Test>]
@@ -121,34 +135,42 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``17 Two names can be bound to the same value`` () =
-        let f x = x + 2
-        let y = f
+        let f x =
+            x + 2
+        let y =
+            f
         y 20 |> should equal ___
 
 
     [<Test>]
     let ``18 Shadowing and functions`` () =
-        let a = 25
-        let f () = a + 10
-        let a = 99
+        let a =
+            25
+        let f () =
+            a + 10
+        let a =
+            99
         a |> should equal __
         f () |> should equal __
 
     [<Test>]
     let ``19 Nesting functions`` () =
         let hailstone x =
-            let triple x = x * 3
-            let addOne x = x + 1
+            let triple x =
+                x * 3
+            let addOne x =
+                x + 1
             addOne (triple x)
         hailstone 5 |> should equal __
 
     [<Test>]
     let ``20 Functions have types`` () =
-        let a x y = x + "cabbage" + y
-        let b r = 50.0 / r
+        let a x y =
+            x + "cabbage" + y
+        let b r =
+            50.0 / r
         a |> should be ofType<FILL_ME_IN>
         b |> should be ofType<FILL_ME_IN>
-
 
     [<Test>]
     let ``21 Passing a function as a parameter`` () =
@@ -164,8 +186,10 @@ module ``03: Putting the Function into Functional Programming`` =
         with your current views about how programming "should" be, and not
         with the feature of higher-order functions :).
     *)
-        let somefunc x y = x + y x
-        let square v = v * v
+        let somefunc x y =
+            x + y x
+        let square v =
+            v * v
         somefunc 3 square |> should equal __
         somefunc 3 ((*) 7) |> should equal __
         somefunc 10 ((+) 8) |> should equal __
@@ -202,8 +226,10 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``23 |>, the 'pipe' operator`` () =
-        let add5 a = a + 5
-        let double a = a * 2
+        let add5 a =
+            a + 5
+        let double a =
+            a * 2
         3 |> add5 |> double |> should equal __  // <-- start with three, add 5, then double. Readable, isn't it?
         3 |> double |> add5 |> should equal __
         6 |> add5 |> add5 |> should equal __
@@ -222,8 +248,10 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``24 The output type of one pipe must be the input type to the next`` () =
-        let a x = x * 2.5
-        let b x = x = 7.5
+        let a x =
+            x * 2.5
+        let b x =
+            x = 7.5
         a |> should be ofType<FILL_ME_IN>
         b |> should be ofType<FILL_ME_IN>
         __ |> __ |> __ |> should equal true
@@ -266,12 +294,18 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``26 >>, the 'compose' operator`` () =
-        let add5 a = a + 5
-        let double a = a * 2
-        let i = add5 >> double // this means the same as: add5, then double
-        let j = double >> add5
-        let k = double >> double >> add5
-        let l = j >> i
+        let add5 a =
+            a + 5
+        let double a =
+            a * 2
+        let i =
+            add5 >> double // this means the same as: add5, then double
+        let j =
+            double >> add5
+        let k =
+            double >> double >> add5
+        let l =
+            j >> i
         i 3 |> should equal __
         j 3 |> should equal __
         k 3 |> should equal __
@@ -279,12 +313,18 @@ module ``03: Putting the Function into Functional Programming`` =
 
     [<Test>]
     let ``27 <<, the 'backwards compose' operator`` () =
-        let add5 a = a + 5
-        let double a = a * 2
-        let i = add5 << double // this means the same as: double, then add5
-        let j = double << add5
-        let k = double << double << add5
-        let l = j << i
+        let add5 a =
+            a + 5
+        let double a =
+            a * 2
+        let i =
+            add5 << double // this means the same as: double, then add5
+        let j =
+            double << add5
+        let k =
+            double << double << add5
+        let l =
+            j << i
         i 3 |> should equal __
         j 3 |> should equal __
         k 3 |> should equal __
@@ -294,12 +334,14 @@ module ``03: Putting the Function into Functional Programming`` =
     let ``28 Unit is used when there is no return value for a function``() = 
         // sendData is a function which is invoked ONLY for its side-effects
         // It might do something, and then it gives back a unit value.
-        let sendData data = ()
+        let sendData data =
+            ()
         sendData "some data to send..." |> should equal ___ // ... don't overthink this one!
    
     [<Test>]
     let ``29 Unit, as an input, conveys no data`` () = 
-        let sayHello () = "hello"
+        let sayHello () =
+            "hello"
         sayHello |> should be ofType<FILL_ME_IN>
         sayHello () |> should be ofType<FILL_ME_IN>
         sayHello () |> should equal __
@@ -332,7 +374,8 @@ module ``03: Putting the Function into Functional Programming`` =
     let ``30 Unit is often used to defer code execution`` () =
         let divideBy10 n () =
             n / 10
-        let deferred = divideBy10 700
+        let deferred =
+            divideBy10 700
         divideBy10 |> should be ofType<FILL_ME_IN>
         deferred |> should be ofType<FILL_ME_IN>
         divideBy10 850 |> should be ofType<FILL_ME_IN>
@@ -363,16 +406,20 @@ module ``03: Putting the Function into Functional Programming`` =
         // this shows you how you can partially specify particular arguments to
         // reuse functionality.  This technique is exceptionally flexible and often
         // seen in functional code, so you should try to understand it.
-        let f animal noise = animal + " says " + noise
-        let kittehs = __ "cat"
+        let f animal noise =
+            animal + " says " + noise
+        let kittehs =
+            __ "cat"
         __ "nyan" |> should equal "cat says nyan"
 
     [<Test>]
     let ``33 Partially specifying arguments (Part 2).`` () =
         // as above, but what do you do when the arguments aren't in the order
         // that you want them to be in?
-        let f animal noise = animal + " says " + noise
-        let howl k = __ // <- multiple words on this line.  You MUST use `f`.
+        let f animal noise =
+            animal + " says " + noise
+        let howl k =
+            __ // <- multiple words on this line.  You MUST use `f`.
         howl "dire wolf" |> should equal "dire wolf says slash/crunch/snap"
         howl "direr wolf" |> should equal "direr wolf says slash/crunch/snap"
 
@@ -380,15 +427,18 @@ module ``03: Putting the Function into Functional Programming`` =
     let ``34 Partially specifying arguments (Part 3).`` () =
         // Extending a bit more, what do you do when you want to apply a function,
         // but modify the result before you give it back?
-        let f animal noise = animal + " says " + noise
-        let cows = __ // <-- multiple words on this line, or you may want to make this a multi-line thing.  You MUST use `f`.
+        let f animal noise =
+            animal + " says " + noise
+        let cows =
+            __ // <-- multiple words on this line, or you may want to make this a multi-line thing.  You MUST use `f`.
         cows "moo" |> should equal "cow says moo, de gozaru"
         cows "MOOooOO" |> should equal "cow says MOOooOO, de gozaru"
 
     [<Test>]
     let ``35 Getting closure`` () =
         let calculate initial final = // note the number of inputs.
-            let middle = (final - initial) / 2
+            let middle =
+                (final - initial) / 2
             fun t -> t-middle, t+middle
         // note the number of inputs provided below.  Do you see why I can do this?
         calculate 10 20 5 |> should equal __
@@ -398,7 +448,8 @@ module ``03: Putting the Function into Functional Programming`` =
     let ``36 Using a value defined in an inner scope`` () =
         // this is very similar to the previous test.
         let g t =
-            let result = ((t%2)+1) * 10
+            let result =
+                ((t%2)+1) * 10
             fun x -> result - x
         g 5 8 |> should equal __
         g 8 5 |> should equal __

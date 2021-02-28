@@ -59,11 +59,16 @@ module ``08: Parametric polymorphism`` =
    
     [<Test>]
     let ``01 The type of symbols in variable patterns is inferred`` () = 
-        let x = 50
-        let y = "a string"
-        let z = -4.23
-        let a = false
-        let b = 't'
+        let x =
+            50
+        let y =
+            "a string"
+        let z =
+            -4.23
+        let a =
+            false
+        let b =
+            't'
         x |> should be ofType<int>
         y |> should be ofType<FILL_ME_IN>
         z |> should be ofType<FILL_ME_IN>
@@ -80,7 +85,8 @@ module ``08: Parametric polymorphism`` =
 
     [<Test>]
     let ``03 Defining a generic function`` () =
-        let f x y = __
+        let f x y =
+            __
         f 4 5 |> should equal (4, 5, 5)
         f "k" 'p' |> should equal ("k", 'p', 'p')
      
@@ -91,8 +97,10 @@ module ``08: Parametric polymorphism`` =
 
     [<Test>]
     let ``04 Creating a generic discriminated union (Part 1).`` () =
-        let a = Secnod (6.55, 7)
-        let b = Thrid (fun k -> true, k, 8)
+        let a =
+            Secnod (6.55, 7)
+        let b =
+            Thrid (fun k -> true, k, 8)
         // how do you write a generic type?
         a |> should be ofType<FILL_ME_IN>
         b |> should be ofType<FILL_ME_IN>
@@ -105,19 +113,31 @@ module ``08: Parametric polymorphism`` =
     [<Test>]
     let ``05 Creating a generic discriminated union (Part 2).`` () =
         // You need to edit the definition of MyDiscriminatedUnion first!  It's just above this test.
-        let a = __
-        let b = __
-        let c = __
-        let d = __
+        let a =
+            __
+        let b =
+            __
+        let c =
+            __
+        let d =
+            __
         match a with
-        | Furoth n -> n |> should equal 7
-        | _ -> Assert.Fail ()
+        | Furoth n ->
+            n |> should equal 7
+        | _ ->
+            Assert.Fail ()
         match b with
-        | Sxi x -> x |> should equal "bleh"
-        | _ -> Assert.Fail ()
+        | Sxi x ->
+            x |> should equal "bleh"
+        | _ ->
+            Assert.Fail ()
         match c with
-        | Furoth p -> p |> should equal 't'
-        | _ -> Assert.Fail ()
+        | Furoth p ->
+            p |> should equal 't'
+        | _ ->
+            Assert.Fail ()
         match d with
-        | Sxi y -> y |> should equal true
-        | _ -> Assert.Fail ()
+        | Sxi y ->
+            y |> should equal true
+        | _ ->
+            Assert.Fail ()

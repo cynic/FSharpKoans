@@ -4,7 +4,8 @@ open NUnit.Framework
 (*
 Consider a simple program:
 
-    let answer = 4 + 5
+    let answer =
+        4 + 5
     answer + 2
 
 The value on the right (i.e. 9) is BOUND to the pattern on the left.  The pattern
@@ -20,9 +21,12 @@ to the identifier `answer`, to be used in the expression `answer + 2`?
 
 Now, let's make this a bit more general:
 
-    let first = 4
-    let second = 5
-    let answer = first + second
+    let first =
+        4
+    let second =
+        5
+    let answer =
+        first + second
     answer + 2
 
 What are we actually saying here?  We are saying:
@@ -38,9 +42,12 @@ you see what's going on.
 Now, a newbie functional programmer might be tempted to write something
 like this in a function:
 
-    let first = 4
-    let second = 5
-    let answer = first + second
+    let first =
+        4
+    let second =
+        5
+    let answer =
+        first + second
 
 ...but that doesn't compile!  What's going on?!  Well, expand it a bit, and you'll
 see that it actually means:
@@ -64,17 +71,24 @@ module ``02: About Binding`` =
 
     [<Test>]
     let ``02 Equivalent basic 'let' binding`` () = // this is exactly equivalent to the previous binding.
-        let x = 50
+        let x =
+            50
         x |> should equal __
 
     [<Test>]
     let ``03 There are many types of values`` () =
-        let a = __
-        let b = __
-        let c = __
-        let d = __
-        let e = __
-        let f = __
+        let a =
+            __
+        let b =
+            __
+        let c =
+            __
+        let d =
+            __
+        let e =
+            __
+        let f =
+            __
         a |> should be ofType<int>
         b |> should be ofType<float>
         c |> should be ofType<bool>
@@ -100,7 +114,8 @@ module ``02: About Binding`` =
         let a =
             let b =
                 let c =
-                    let d = 63 in d
+                    let d = 63 in
+                        d
                 c + 1
             b + 7
         a |> should equal ___
@@ -109,10 +124,14 @@ module ``02: About Binding`` =
     Identifiers are *referentially transparent*: the link between value and identifier never changes.
     However, identifiers may be *shadowed*.  The best way to explain this is with an example.
 
-        let quex = 10
-        let quex = 19
-        let quex = 5 + quex
-        let quex = "Something"
+        let quex =
+            10
+        let quex =
+            19
+        let quex =
+            5 + quex
+        let quex =
+            "Something"
 
     In this example, the identifier `quex` is bound four times.
 
@@ -133,12 +152,16 @@ module ``02: About Binding`` =
 
     [<Test>]
     let ``07 Shadowing`` () =
-        let a = 21
+        let a =
+            21
         let b =
-            let a = 8
+            let a =
+                8
             3 + a
-        let c = a + 4
-        let a = a + a
+        let c =
+            a + 4
+        let a =
+            a + a
         a |> should equal __
         b |> should equal __
         c |> should equal __
@@ -155,36 +178,48 @@ module ``02: About Binding`` =
 
     [<Test>]
     let ``08 An identifier pattern will match anything`` () =
-        let x = __ // replace with an integer
-        let y = __ // replace with a string
-        let z = __ // replace with anything else!
+        let x =
+            __ // replace with an integer
+        let y =
+            __ // replace with a string
+        let z =
+            __ // replace with anything else!
         x |> should be ofType<int>
         y |> should be ofType<string>
 
     [<Test>]
     let ``09 A wildcard pattern will match anything`` () =
-        let _ = __ // replace with an integer
-        let _ = __ // replace with a string
-        let _ = __ // replace with anything else!
+        let _ =
+            __ // replace with an integer
+        let _ =
+            __ // replace with a string
+        let _ =
+            __ // replace with anything else!
         ()
 
     [<Test>]
     let ``10 Constant patterns succeed if both sides match`` () =
-        let 900 = __
-        let "Can't win all the time" = __
+        let 900 =
+            __
+        let "Can't win all the time" =
+            __
         ()
 
     [<Test>]
     let ``11 Constant patterns fail if the sides don't match exactly`` () =
         // fill in something below, on the right-hand side, to make this pattern FAIL
         (fun () ->
-            let "FILL ME IN" = FILL__ME_IN
+            let "FILL ME IN" =
+                FILL__ME_IN
             ()
         ) |> should throw typeof<MatchFailureException>
 
     [<Test>]
     let ``12 Or patterns succeed if any pattern matches`` () =
-        let a | a = __
-        let 7 | 13 | 2 = 3 + __
-        let 'x' | _ | 'p' = __
+        let a | a =
+            __
+        let 7 | 13 | 2 =
+            3 + __
+        let 'x' | _ | 'p' =
+            __
         ()

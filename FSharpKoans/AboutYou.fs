@@ -68,6 +68,11 @@ I hope that you'll enjoy it as much as I do ^_^.
 module ``14: About You`` =
     [<Test>]
     let ``Where to now?`` () =
-        let resources = ["https://fsharpforfunandprofit.com"; "http://learnyouahaskell.com/chapters"; "https://www.scheme.com/tspl4/"]
-        let visited = __ // <-- as you visit, add to a list here!
+        let resources =
+            [ "https://fsharpforfunandprofit.com"
+            ; "http://learnyouahaskell.com/chapters"
+            ; "https://www.scheme.com/tspl4/"
+            ]
+        let visited =
+            __ // <-- as you visit, add to a list here!
         visited |> should equal resources

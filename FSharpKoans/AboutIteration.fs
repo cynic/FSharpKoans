@@ -13,21 +13,28 @@ module ``05: To iterate is human; to recurse, divine`` =
             match d = c with
             | false ->
                 match d < c with
-                | true -> converge (d+10) c (n+1)
-                | false -> converge (d - 1) c (n+1)
-            | true -> n
+                | true ->
+                    converge (d+10) c (n+1)
+                | false ->
+                    converge (d - 1) c (n+1)
+            | true ->
+                n
         converge 3 10 0 |> should equal __
 
     [<Test>]
     let ``02 Tail recursion stops a stack overflow from occurring`` () =
         // CHANGE the recursive function to be tail recursive.
         let myfun n =
-            let sq = n*n
-            let v = sq*sq*sq*sq
+            let sq =
+                n*n
+            let v =
+                sq*sq*sq*sq
             let rec inner count =
                 match count = v with
-                | true -> 0
-                | false -> -1 + inner (count+1)
+                | true ->
+                    0
+                | false ->
+                    -1 + inner (count+1)
             inner sq
 
         myfun 12 |> should equal

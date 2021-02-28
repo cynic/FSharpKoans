@@ -8,8 +8,10 @@ understand this function:
 let f xs =
    let rec innerF xs out =
       match xs with
-      | [] -> out
-      | _::rest -> innerF rest (1::out)
+      | [] ->
+        out
+      | _::rest ->
+        innerF rest (1::out)
    innerF xs []
 
 This is one of the idioms that you'll see (and use) again and again.
@@ -219,7 +221,8 @@ or something else), it's likely that you'll be able to use a fold.
     let ``17 partition: splitting a list based on a criterion`` () =
         let partition (f : 'a -> bool) (xs : 'a list) : ('a list) * ('a list) =
             __ // Does this: https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/list.partition%5b't%5d-function-%5bfsharp%5d
-        let a, b = partition (fun x -> x%2=0) [1;2;3;4;5;6;7;8;9;10]
+        let a, b =
+            partition (fun x -> x%2=0) [1;2;3;4;5;6;7;8;9;10]
         a |> should equal [2;4;6;8;10]
         b |> should equal [1;3;5;7;9]
         let c, d = partition (fun x -> String.length x < 4) ["woof"; "yip"; "moo"; "nyan"; "arf"]
@@ -251,15 +254,20 @@ or something else), it's likely that you'll be able to use a fold.
         let tryPick (p : 'a -> 'b option) (xs : 'a list) : 'b option =
             __ // Does this: https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/list.trypick%5b't,'u%5d-function-%5bfsharp%5d
         let f x =
-            match x<=45 with
-            | true -> Some(x*2)
-            | _ -> None
+            match x <= 45 with
+            | true ->
+                Some(x*2)
+            | _ ->
+                None
         tryPick f [100;85;25;55;6] |> should equal (Some 50)
         let g x =
             match String.length x with
-            | 1 | 3 | 5 | 7 | 9 -> Some <| String.concat "-" [x;x;x]
-            | 0 | 2 | 4 | 6 | 8 -> Some "Yo!"
-            | _ -> None
+            | 1 | 3 | 5 | 7 | 9 ->
+                Some <| String.concat "-" [x;x;x]
+            | 0 | 2 | 4 | 6 | 8 ->
+                Some "Yo!"
+            | _ ->
+                None
         tryPick g ["billabong!!"; "in the house!"; "yolo!"; "wut!"] |> should equal (Some "yolo!-yolo!-yolo!")
         tryPick g ["qwerty"; "khazad-dum"] |> should equal (Some "Yo!")
         tryPick g ["And the winner is..."] |> should equal None
@@ -281,15 +289,20 @@ or something else), it's likely that you'll be able to use a fold.
         let choose (p : 'a -> 'b option) (xs : 'a list) : 'b list =
             __ // Does this: https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/list.choose%5b't,'u%5d-function-%5bfsharp%5d
         let f x =
-            match x<=45 with
-            | true -> Some(x*2)
-            | _ -> None
+            match x <= 45 with
+            | true ->
+                Some(x*2)
+            | _ ->
+                None
         choose f [100;85;25;55;6] |> should equal [50;12]
         let g x =
             match String.length x with
-            | 1 | 3 | 5 | 7 | 9 -> Some <| String.concat "-" [x;x;x]
-            | 0 | 2 | 4 | 6 | 8 -> Some "Yo!"
-            | _ -> None
+            | 1 | 3 | 5 | 7 | 9 ->
+                Some <| String.concat "-" [x;x;x]
+            | 0 | 2 | 4 | 6 | 8 ->
+                Some "Yo!"
+            | _ ->
+                None
         choose g ["billabong!!"; "in the house!"; "yolo!"; "wut!"] |> should equal ["yolo!-yolo!-yolo!"; "Yo!"]
         choose g ["qwerty"; "khazad-dum"] |> should equal ["Yo!"]
         choose g ["And the winner is..."] |> should equal []
@@ -301,8 +314,10 @@ or something else), it's likely that you'll be able to use a fold.
         mapi (fun i x -> -i, x+1) [9;8;7;6] |> should equal [0,10; -1,9; -2,8; -3,7]
         let hailstone i t =
             match i%2 with
-            | 0 -> t/2
-            | _ -> t*3+1
+            | 0 ->
+                t/2
+            | _ ->
+                t*3+1
         mapi hailstone [9;8;7;6] |> should equal [4;25;3;19]
         mapi (fun i x -> $"{i+1}. {x}")  ["2B"; "R02B"; "R2D2?"]
         |> should equal ["1. 2B"; "2. R02B"; "3. R2D2?"]

@@ -97,7 +97,7 @@ module ``08: Parametric polymorphism`` =
         a |> should be ofType<FILL_ME_IN>
         b |> should be ofType<FILL_ME_IN>
 
-    type MyDiscriminatedUnion =
+    type MyDiscriminatedUnion = // <-- you will need to change this line, too
     | Furoth of FILL_ME_IN
     | Fevi
     | Sxi of FILL_ME_IN

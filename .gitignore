@@ -9,3 +9,6 @@ FSharpKoans2010.suo
 packages/
 *.suo
 .vs
+.fake
+.ionide
+.vscode

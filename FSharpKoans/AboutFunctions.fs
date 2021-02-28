@@ -352,7 +352,7 @@ module ``03: Putting the Function into Functional Programming`` =
         // this next function has a side-effect: it prints something out.
         let log x =
             // print out the value of x
-            printfn "%A" x
+            printfn $"{x}"
             x // return x
         log 5 |> should equal __
         ignore (log "blorp") |> should equal __

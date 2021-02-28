@@ -92,14 +92,14 @@ module ``12: List operations are so easy, you could make them yourself!`` =
             __ // write a map which applies f to each element
         map (fun x -> x+1) [9;8;7] |> should equal [10;9;8]
         map ((*) 2) [9;8;7] |> should equal [18;16;14]
-        map (fun x -> sprintf "%.2f wut?" x)  [9.3; 1.22] |> should equal ["9.30 wut?"; "1.22 wut?"]
+        map (fun x -> $"{x} wut?")  [9.3; 1.22] |> should equal ["9.3 wut?"; "1.22 wut?"]
 
     // Hint: https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/list.map%5b't,'u%5d-function-%5bfsharp%5d
     [<Test>]
     let ``08 Specified-function mapping, the easy way`` () =
         __ (fun x -> x+1) [9;8;7] |> should equal [10;9;8]
         __ ((*) 2) [9;8;7] |> should equal [18;16;14]
-        __ (fun x -> sprintf "%.2f wut?" x)  [9.3; 1.22] |> should equal ["9.30 wut?"; "1.22 wut?"]
+        __ (fun x -> $"{x} wut?")  [9.3; 1.22] |> should equal ["9.3 wut?"; "1.22 wut?"]
 
     [<Test>]
     let ``09 Specified-function filtering, the hard way`` () =
@@ -192,7 +192,7 @@ or something else), it's likely that you'll be able to use a fold.
             __  // write a function to do a fold.
         fold (+) 0 [1;2;3;4] |> should equal 10
         fold (*) 2 [1;2;3;4] |> should equal 48
-        fold (fun state item -> sprintf "%s %s" state item) "items:" ["dog"; "cat"; "bat"; "rat"]
+        fold (fun state item -> $"{state} {item}") "items:" ["dog"; "cat"; "bat"; "rat"]
         |> should equal "items: dog cat bat rat"
         fold (fun state item -> state + float item + 0.5) 0.8 [1;3;5;7] |> should equal 18.8
 
@@ -201,7 +201,7 @@ or something else), it's likely that you'll be able to use a fold.
     let ``15 Folding, the easy way`` () =
         __ (+) 0 [1;2;3;4] |> should equal 10
         __ (*) 2 [1;2;3;4] |> should equal 48
-        __ (fun state item -> sprintf "%s %s" state item) "items:" ["dog"; "cat"; "bat"; "rat"]
+        __ (fun state item -> $"{state} {item}") "items:" ["dog"; "cat"; "bat"; "rat"]
         |> should equal "items: dog cat bat rat"
         __ (fun state item -> state + float item + 0.5) 0.8 [1;3;5;7] |> should equal 18.8
 
@@ -235,7 +235,7 @@ or something else), it's likely that you'll be able to use a fold.
         let init (n : int) (f : int -> 'a) : 'a list =
             __ // Does this: https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/list.init%5b't%5d-function-%5bfsharp%5d
         init 10 (fun x -> x*2) |> should equal [0;2;4;6;8;10;12;14;16;18]
-        init 4 (sprintf "(%d)") |> should equal ["(0)";"(1)";"(2)";"(3)"]
+        init 4 (fun i -> $"({i})") |> should equal ["(0)";"(1)";"(2)";"(3)"]
 
     // List.tryFind
     [<Test>]
@@ -304,5 +304,5 @@ or something else), it's likely that you'll be able to use a fold.
             | 0 -> t/2
             | _ -> t*3+1
         mapi hailstone [9;8;7;6] |> should equal [4;25;3;19]
-        mapi (fun i x -> sprintf "%03d. %s" (i+1) x)  ["2B"; "R02B"; "R2D2?"]
-        |> should equal ["001. 2B"; "002. R02B"; "003. R2D2?"]
+        mapi (fun i x -> $"{i+1}. {x}")  ["2B"; "R02B"; "R2D2?"]
+        |> should equal ["1. 2B"; "2. R02B"; "3. R2D2?"]

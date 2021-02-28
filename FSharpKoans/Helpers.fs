@@ -132,3 +132,5 @@ let inline should (f : 'a -> #Constraints.Constraint) x (y : obj) =
             sf.GetFileName()
             |> System.IO.Path.GetFileName
         failwithf "There's a problem somewhere around line %d in \"%s\" (file: %s). What's wrong, I wonder?" lineno methodname file
+
+#nowarn "0025"

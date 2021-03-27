@@ -54,7 +54,7 @@ open System
 open NUnit.Framework
 open FsUnit
 
-// note to self: this is a helpful regex: let ``.*``[^(]+=
+// note to self: this is a helpful regex: let .*[^(]+=
 
 (*
 == Things That I Now Know About NUnit ==
@@ -95,7 +95,7 @@ let inline ofType<'a> =
                 | :? 'a -> Constraints.ConstraintResult(__, x, true)
                 | _ -> instanceOfType<'a>.ApplyTo x
     }
-let ``me`` =
+let me =
     System.Reflection.Assembly.GetExecutingAssembly().FullName
 let inline should (f : 'a -> #Constraints.Constraint) x (y : obj) =
     let c = f x
@@ -124,7 +124,7 @@ let inline should (f : 'a -> #Constraints.Constraint) x (y : obj) =
         let sf =
             trace.GetFrames ()
             |> Array.filter (fun sf ->
-                sf.GetMethod().DeclaringType.Assembly.FullName = ``me``
+                sf.GetMethod().DeclaringType.Assembly.FullName = me
             ) |> Seq.last
         let lineno = sf.GetFileLineNumber()
         let methodname = sf.GetMethod().Name

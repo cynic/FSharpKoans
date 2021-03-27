@@ -9,7 +9,7 @@ open NUnit.Framework
 *)
 
 
-module ``07: The Good Kind of Discrimination`` = 
+module _07_The_Good_Kind_of_Discrimination = 
     type Subject = // <-- feel free to add your own subjects!
     | Philosophy
     | Linguistics
@@ -29,7 +29,7 @@ module ``07: The Good Kind of Discrimination`` =
     | Masters of Subject
 
     [<Test>]
-    let ``01 A case isn't the same as a type`` () = 
+    let _01_A_case_isn't_the_same_as_a_type () = 
         let aDegree =
             BSc (Linguistics, ComputerScience)
         let anotherDegree =
@@ -41,7 +41,7 @@ module ``07: The Good Kind of Discrimination`` =
         philosopherKing |> should be ofType<FILL_ME_IN> 
    
     [<Test>]
-    let ``02 Creating & pattern-matching a discriminated union`` () = 
+    let _02_Creating_and_pattern_matching_a_discriminated_union () = 
         let randomOpinion degree =
             match degree with
             | BSc (_, ComputerScience) | BSc (ComputerScience, _) ->
@@ -62,13 +62,13 @@ module ``07: The Good Kind of Discrimination`` =
         randomOpinion __ |> should equal "Meh, it's OK."
 
     [<Test>]
-    let ``03 We can create a discriminated union using named fields`` () =
+    let _03_We_can_create_a_discriminated_union_using_named_fields () =
         let someDegree =
             BSc (second = __, first = __)            
         someDegree |> should equal (BSc (ComputerScience, Mathematics))
 
     [<Test>]
-    let ``04 Pattern-matching using named fields`` () =
+    let _04_Pattern_matching_using_named_fields () =
         let result =
             match BSc (Management, ComputerScience) with
             | FILL_ME_IN ->
@@ -83,7 +83,7 @@ module ``07: The Good Kind of Discrimination`` =
     | Rented of renter:string
 
     [<Test>]
-    let ``05 A discriminated union case with associated data is a function`` () =
+    let _05_A_discriminated_union_case_with_associated_data_is_a_function () =
         Broken |> should be ofType<FILL_ME_IN>
         Rented |> should be ofType<FILL_ME_IN>
 
@@ -92,7 +92,7 @@ module ``07: The Good Kind of Discrimination`` =
     | Node of string * BinaryTree * BinaryTree
 
     [<Test>]
-    let ``06 A discriminated union can refer to itself (i.e., it can be recursive).`` () =
+    let _06_A_discriminated_union_can_refer_to_itself (* i.e. it can be recursive *) () =
         let rec depth x =
             match x with
             | Empty ->

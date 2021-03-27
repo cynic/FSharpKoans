@@ -10,16 +10,16 @@ matches, then you get a MatchFailureException at runtime and you turn into a
 Sad Panda.
 *)
 
-module ``04: Match expressions`` = 
+module _04_Match_expressions = 
     [<Test>]
-    let ``01 Basic match expression`` () =
+    let _01 Basic_match_expression () =
         match 8000 with
         | FILL_ME__IN ->
             "Insufficient power-level"
         ()
 
     [<Test>]
-    let ``02 Match expressions are expressions, not statements`` () =
+    let _02_Match_expressions_are_expressions_not_statements () =
         let result =
             match 9001 with
             | FILL_ME__IN -> // <-- use an identifier pattern here!
@@ -33,7 +33,7 @@ module ``04: Match expressions`` =
         result |> should equal "Hah! It's a palindromic number!"
 
     [<Test>]
-    let ``03 Shadowing in match expressions`` () =
+    let _03_Shadowing_in_match_expressions () =
         let x =
             213
         let y =
@@ -50,7 +50,7 @@ module ``04: Match expressions`` =
         x |> should equal __
 
     [<Test>]
-    let ``04 Match order in match expressions`` () =
+    let _04_Match_order_in_match_expressions () =
         let x =
             213
         let y =
@@ -81,7 +81,7 @@ module ``04: Match expressions`` =
         a |> should equal __
 
     [<Test>]
-    let ``05 Using a mapping function`` () =
+    let _05_Using_a_mapping_function () =
         let mapper = function // write the (multiple) cases for this function!
             | _ ->
                 __ 
@@ -97,7 +97,7 @@ module ``04: Match expressions`` =
     *)
 
     [<Test>]
-    let ``06 Using an OR-pattern`` () =
+    let _06_Using_an_OR_pattern () =
         let f input =
             match input with
             | "wut" | "lol" ->
@@ -115,7 +115,7 @@ module ``04: Match expressions`` =
         f "vodka" |> should equal "failure"
 
     [<Test>]
-    let ``07 Identifiers bound on all branches of an OR-pattern must be the same`` () =
+    let _07_Identifiers_bound_on_all_branches_of_an_OR_pattern_must_be_the_same () =
         let f input =
             match input with
             | 0,0 ->

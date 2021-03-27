@@ -14,7 +14,7 @@ type Option<'a> =
 There are many built-in functions which return an Option.
 *)
 
-module ``09: Exploring types, options, and results`` =
+module _09_Exploring_types_options_and_results =
    (*
       The next function takes in a name and extracts the surname.
       But not all people have surnames!
@@ -45,7 +45,7 @@ module ``09: Exploring types, options, and results`` =
     // success and failure cases explicit.
 
     [<Test>]
-    let ``01 Type annotations for function types`` () =
+    let _01_Type_annotations_for_function_types () =
         let a (x:FILL_ME_IN) (y:FILL_ME_IN) =
             x + y
         let b (x:FILL_ME_IN) (y:FILL_ME_IN) =
@@ -56,20 +56,20 @@ module ``09: Exploring types, options, and results`` =
         b __ __ |> should equal 1.02
 
     [<Test>]
-    let ``02 We can use a type annotation for a function's output`` () =
+    let _02_We_can_use_a_type_annotation_for_a_function's_output () =
         let k a b : FILL_ME_IN =
             a * b
         k __ __ |> should equal 15.0 
 
     [<Test>]
-    let ``03 Basic Option example`` () =
+    let _03_Basic_Option_example () =
         getSurname "Taylor Swift" |> should equal __
         getSurname "Eminem" |> should equal __
 
     // the System.Int32.TryParse, System.Double.TryParse, etc functions return
     // a tuple of bool * XYZ, where XYZ is the converted value.
     [<Test>]
-    let ``04 Parsing a string safely`` () =
+    let _04_Parsing_a_string_safely () =
         let parse (s:string) =
             match System.Int32.TryParse s with // now fill in all the match cases
             | _ ->
@@ -79,7 +79,7 @@ module ``09: Exploring types, options, and results`` =
         parse "wut" |> should equal None
 
     [<Test>]
-    let ``05 Remapping Option values`` () =
+    let _05_Remapping_Option_values () =
       let f n =
          match getSurname n with // write a bunch of good match cases
          | _ ->
@@ -94,7 +94,7 @@ module ``09: Exploring types, options, and results`` =
     | NegativeNumberSupplied
 
     [<Test>]
-    let ``06 Using a Result to explain why things went wrong`` () =
+    let _06_Using_a_Result_to_explain_why_things_went_wrong () =
         let f n m =
             match n<0.0, m=0.0 with
             | true, _ ->

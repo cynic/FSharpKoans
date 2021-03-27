@@ -65,9 +65,9 @@ discovery.  Functional programming is a rich, amazing experience.
 I hope that you'll enjoy it as much as I do ^_^.
 *)
 
-module ``14: About You`` =
+module _14_About_You =
     [<Test>]
-    let ``Where to now?`` () =
+    let Where_to_now () =
         let resources =
             [ "https://fsharpforfunandprofit.com"
             ; "http://learnyouahaskell.com/chapters"

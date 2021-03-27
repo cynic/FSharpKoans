@@ -1,14 +1,14 @@
 ﻿namespace FSharpKoans
 open NUnit.Framework
 
-module ``05: To iterate is human; to recurse, divine`` =
+module _05_To_iterate_is_human_but_to_recurse_is_divine =
     (*
         The `rec` keyword exposes the function identifier for use inside the function.
         And that's literally all that it does - it has no other purpose whatsoever.
     *)
 
     [<Test>]
-    let ``01 `rec` exposes the name of the function for use inside the function`` () =
+    let _01_'rec'_exposes_the_name_of_the_function_for_use_inside_the_function () =
         let rec converge d c n =
             match d = c with
             | false ->
@@ -22,7 +22,7 @@ module ``05: To iterate is human; to recurse, divine`` =
         converge 3 10 0 |> should equal __
 
     [<Test>]
-    let ``02 Tail recursion stops a stack overflow from occurring`` () =
+    let _02_Tail_recursion_stops_a_stack_overflow_from_occurring () =
         // CHANGE the recursive function to be tail recursive.
         let myfun n =
             let sq =

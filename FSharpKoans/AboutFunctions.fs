@@ -15,36 +15,36 @@ open NUnit.Framework
     just functions rather than keywords.
 *)
 
-module ``03: Putting the Function into Functional Programming`` = 
+module _03_Putting_the_Function_into_Functional_Programming = 
     [<Test>]
-    let ``01 A function takes one input and produces one output`` () =
+    let _01_A_function_takes_one_input_and_produces_one_output () =
         (fun a -> a + 100) __ |> should equal 2097
 
     [<Test>]
-    let ``02 The input to a function is a pattern (Part 1).`` () =
+    let _02_The_input_to_a_function_is_a_pattern_Part_1 () =
         (fun 7 -> 9) __ |> should equal 9
 
     [<Test>]
-    let ``03 The input to a function is a pattern (Part 2).`` () =
+    let _03_The_input_to_a_function_is_a_pattern_Part_2 () =
         (fun _ -> 75) __ |> should equal 75
 
     [<Test>]
-    let ``04 The input to a function is a pattern (Part 3).`` () =
+    let _04_The_input_to_a_function_is_a_pattern_Part_3 () =
         (fun (2 | 3 | 5) -> "Prime") __ |> should equal "Prime"
 
     [<Test>]
-    let ``05 A function can be bound to a name (Part 1).`` () =
+    let _05_A_function_can_be_bound_to_a_name_Part_1 () =
         let one_third =
             fun ka -> ka / 3
         __ 21 |> should equal 7
 
     [<Test>]
-    let ``06 A function can be bound to a name (Part 2).`` () =
+    let _06_A_function_can_be_bound_to_a_name_Part_2 () =
         let pinky bleh = bleh / 3 // The syntax has changed from Part 1, but the meaning is the same
         __ 21 |> should equal 7
 
     [<Test>]
-    let ``07 A function can span multiple lines (Part 1).`` () =
+    let _07_A_function_can_span_multiple_lines_Part_1 () =
         (fun zorro ->
             let k =
                 "swash" // notice the indentation.
@@ -54,7 +54,7 @@ module ``03: Putting the Function into Functional Programming`` =
         ) "Zorro the pirate" |> should equal __
 
     [<Test>]
-    let ``08 A function can span multiple lines (Part 2).`` () =
+    let _08_A_function_can_span_multiple_lines_Part_2 () =
         let jorus who =
             let p =
                 5
@@ -62,7 +62,7 @@ module ``03: Putting the Function into Functional Programming`` =
         jorus 12 |> should equal __
 
     [<Test>]
-    let ``09 A function can span multiple lines (Part 2, expanded syntax).`` () =
+    let _09_A_function_can_span_multiple_lines_Part_2_with_expanded_syntax () =
         // This is largely the same as the previous test; the syntax is just more explicit.
         // Does the syntax make what's going on more clear?
         let jorus =
@@ -78,7 +78,7 @@ module ``03: Putting the Function into Functional Programming`` =
     // will have to understand and apply these in your own code.
 
     [<Test>]
-    let ``10 A function can return a function (Part 1).`` () =
+    let _10_A_function_can_return_a_function_Part_1 () =
         let i =
             fun love ->
                 fun hate ->
@@ -90,7 +90,7 @@ module ``03: Putting the Function into Functional Programming`` =
         k |> should equal __
 
     [<Test>]
-    let ``11 A function can return a function (Part 2).`` () =
+    let _11_A_function_can_return_a_function_Part_2 () =
         let funky a b =
             a + b
         let j =
@@ -100,15 +100,15 @@ module ``03: Putting the Function into Functional Programming`` =
         k |> should equal __
 
     [<Test>]
-    let ``12 You can write a function as a one-liner (Part 1).`` () =
+    let _12_You_can_write_a_function_as_a_one_liner_Part_1 () =
         (fun ___ -> fun ___ -> __ * __) __ __ |> should equal 27
 
     [<Test>]
-    let ``13 You can write a function as a one-liner (Part 2).`` () =
+    let _13_You_can_write_a_function_as_a_one_liner_Part_2 () =
         (fun _____ ____ -> __ + __) __ __ |> should equal 17
 
     [<Test>]
-    let ``14 'Multiple-argument' functions are one-input, one-output in disguise`` () =
+    let _14_'Multiple_argument'_functions_are_one_input__one_output_in_disguise () =
       let i j k =
         j * k
       let j =
@@ -118,14 +118,14 @@ module ``03: Putting the Function into Functional Programming`` =
       k |> should equal 48
 
     [<Test>]
-    let ``15 A function is executed when it is called, NOT when it is defined or referenced (Part 1).`` () =
+    let _15_A_function_is_executed_when_it_is_called__NOT_when_it_is_defined_or_referenced_Part_1 () =
         let f a =
             failwith "An exception will be thrown as soon as this is executed."
             a + 2
         ___ |> should be ofType<int -> int>
 
     [<Test>]
-    let ``16 A function is executed when it is called, NOT when it is defined or referenced (Part 2).`` () =
+    let _16_A_function_is_executed_when_it_is_called__NOT_when_it_is_defined_or_referenced_Part_2 () =
         (fun () ->
             let f a =
                 failwith "An exception will be thrown as soon as this is executed."
@@ -134,7 +134,7 @@ module ``03: Putting the Function into Functional Programming`` =
         ) |> should throw typeof<System.Exception>
 
     [<Test>]
-    let ``17 Two names can be bound to the same value`` () =
+    let _17_Two_names_can_be_bound_to_the_same_value () =
         let f x =
             x + 2
         let y =
@@ -143,7 +143,7 @@ module ``03: Putting the Function into Functional Programming`` =
 
 
     [<Test>]
-    let ``18 Shadowing and functions`` () =
+    let _18_Shadowing_and_functions () =
         let a =
             25
         let f () =
@@ -154,7 +154,7 @@ module ``03: Putting the Function into Functional Programming`` =
         f () |> should equal __
 
     [<Test>]
-    let ``19 Nesting functions`` () =
+    let _19_Nesting_functions () =
         let hailstone x =
             let triple x =
                 x * 3
@@ -164,7 +164,7 @@ module ``03: Putting the Function into Functional Programming`` =
         hailstone 5 |> should equal __
 
     [<Test>]
-    let ``20 Functions have types`` () =
+    let _20_Functions_have_types () =
         let a x y =
             x + "cabbage" + y
         let b r =
@@ -173,7 +173,7 @@ module ``03: Putting the Function into Functional Programming`` =
         b |> should be ofType<FILL_ME_IN>
 
     [<Test>]
-    let ``21 Passing a function as a parameter`` () =
+    let _21_Passing_a_function_as_a_parameter () =
     (*
         A function which accepts a function as input is called a "higher-order"
         function.
@@ -201,7 +201,7 @@ module ``03: Putting the Function into Functional Programming`` =
    *)
 
     [<Test>]
-    let ``22 Operators are functions in disguise`` () =
+    let _22_Operators_are_functions_in_disguise () =
         (+) 5 8 |> should equal __
         (-) 3 5 |> should equal __
         (/) 12 4 |> should equal __
@@ -225,7 +225,7 @@ module ``03: Putting the Function into Functional Programming`` =
 *)
 
     [<Test>]
-    let ``23 |>, the 'pipe' operator`` () =
+    let _23__the_'pipe'_operator () =
         let add5 a =
             a + 5
         let double a =
@@ -247,7 +247,7 @@ module ``03: Putting the Function into Functional Programming`` =
     *)
 
     [<Test>]
-    let ``24 The output type of one pipe must be the input type to the next`` () =
+    let _24_The_output_type_of_one_pipe_must_be_the_input_type_to_the_next () =
         let a x =
             x * 2.5
         let b x =
@@ -271,7 +271,7 @@ module ``03: Putting the Function into Functional Programming`` =
     *)
 
     [<Test>]
-    let ``25 <|, the lesser-used (but still useful) backwards pipe`` () =
+    let _25__the_lesser_used_but_still_useful_backwards_pipe () =
         let a x =
             x = 4
         not (a 4) |> should equal false
@@ -293,7 +293,7 @@ module ``03: Putting the Function into Functional Programming`` =
     *)
 
     [<Test>]
-    let ``26 >>, the 'compose' operator`` () =
+    let _26__the_'compose'_operator () =
         let add5 a =
             a + 5
         let double a =
@@ -312,7 +312,7 @@ module ``03: Putting the Function into Functional Programming`` =
         l 3 |> should equal __
 
     [<Test>]
-    let ``27 <<, the 'backwards compose' operator`` () =
+    let _27__the_'backwards_compose'_operator () =
         let add5 a =
             a + 5
         let double a =
@@ -331,7 +331,7 @@ module ``03: Putting the Function into Functional Programming`` =
         l 3 |> should equal __
 
     [<Test>]
-    let ``28 Unit is used when there is no return value for a function``() = 
+    let _28_Unit_is_used_when_there_is_no_return_value_for_a_function() = 
         // sendData is a function which is invoked ONLY for its side-effects
         // It might do something, and then it gives back a unit value.
         let sendData data =
@@ -339,7 +339,7 @@ module ``03: Putting the Function into Functional Programming`` =
         sendData "some data to send..." |> should equal ___ // ... don't overthink this one!
    
     [<Test>]
-    let ``29 Unit, as an input, conveys no data`` () = 
+    let _29_Unit_as_an_input_conveys_no_data () = 
         let sayHello () =
             "hello"
         sayHello |> should be ofType<FILL_ME_IN>
@@ -371,7 +371,7 @@ module ``03: Putting the Function into Functional Programming`` =
     *)
 
     [<Test>]
-    let ``30 Unit is often used to defer code execution`` () =
+    let _30_Unit_is_often_used_to_defer_code_execution () =
         let divideBy10 n () =
             n / 10
         let deferred =
@@ -391,7 +391,7 @@ module ``03: Putting the Function into Functional Programming`` =
     *)
 
     [<Test>]
-    let ``31 The 'ignore' function is used to map anything to 'unit'`` () =
+    let _31_The_'ignore'_function_is_used_to_map_anything_to_'unit' () =
         // this next function has a side-effect: it prints something out.
         let log x =
             // print out the value of x
@@ -402,7 +402,7 @@ module ``03: Putting the Function into Functional Programming`` =
         log 19.66 |> ignore |> should equal __
 
     [<Test>]
-    let ``32 Partially specifying arguments (Part 1).`` () =
+    let _32_Partially_specifying_arguments_Part_1 () =
         // this shows you how you can partially specify particular arguments to
         // reuse functionality.  This technique is exceptionally flexible and often
         // seen in functional code, so you should try to understand it.
@@ -413,7 +413,7 @@ module ``03: Putting the Function into Functional Programming`` =
         __ "nyan" |> should equal "cat says nyan"
 
     [<Test>]
-    let ``33 Partially specifying arguments (Part 2).`` () =
+    let _33_Partially_specifying_arguments_Part_2 () =
         // as above, but what do you do when the arguments aren't in the order
         // that you want them to be in?
         let f animal noise =
@@ -424,7 +424,7 @@ module ``03: Putting the Function into Functional Programming`` =
         howl "direr wolf" |> should equal "direr wolf says slash/crunch/snap"
 
     [<Test>]
-    let ``34 Partially specifying arguments (Part 3).`` () =
+    let _34_Partially_specifying_arguments_Part_3 () =
         // Extending a bit more, what do you do when you want to apply a function,
         // but modify the result before you give it back?
         let f animal noise =
@@ -435,7 +435,7 @@ module ``03: Putting the Function into Functional Programming`` =
         cows "MOOooOO" |> should equal "cow says MOOooOO, de gozaru"
 
     [<Test>]
-    let ``35 Getting closure`` () =
+    let _35_Getting_closure () =
         let calculate initial final = // note the number of inputs.
             let middle =
                 (final - initial) / 2
@@ -445,7 +445,7 @@ module ``03: Putting the Function into Functional Programming`` =
         calculate 0 600 250 |> should equal __
 
     [<Test>]
-    let ``36 Using a value defined in an inner scope`` () =
+    let _36_Using_a_value_defined_in_an_inner_scope () =
         // this is very similar to the previous test.
         let g t =
             let result =
@@ -456,7 +456,7 @@ module ``03: Putting the Function into Functional Programming`` =
         // PS. I hope this one brought you some closure.
 
     [<Test>]
-    let ``37 An operator is just a function in disguise`` () =
+    let _37_An_operator_is_just_a_function_in_disguise () =
         let apply f x =
             f x 3
         apply (/) 27 |> should equal __

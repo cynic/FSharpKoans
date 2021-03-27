@@ -6,15 +6,15 @@ open NUnit.Framework
 Lists are immutable, ordered, finite sequences of a single type.
 *)
 
-module ``10: I Have Here In My Hand A List`` = 
+module _10_I_Have_Here_In_My_Hand_A_List = 
     [<Test>]
-    let ``01 Creating a list (Syntax 1).`` () = 
+    let _01_Creating_a_list_Syntax 1 () = 
         let myList =
             [ __; __; __; __ ]
         myList |> should equal [ "apple"; "grape"; "pear"; "biscuit" ]
    
     [<Test>]
-    let ``02 Creating a list (Syntax 2).`` () =
+    let _02_Creating_a_list_Syntax_2 () =
         let myList =
             __::__::__::__::[]
         let myOtherList =
@@ -29,7 +29,7 @@ module ``10: I Have Here In My Hand A List`` =
         myLastList |> should equal [ "naartjie"; "raisin"; "apple"; "grape"; "pear"; "biscuit" ]
 
     [<Test>]
-    let ``03 Creating a list (via concatenation).`` () =
+    let _03_Creating_a_list_via_concatenation () =
         let a =
             [902; 10]
         let b =
@@ -39,7 +39,7 @@ module ``10: I Have Here In My Hand A List`` =
         result |> should equal [902; 10; 3; 13; 37]
 
     [<Test>]
-    let ``04 The : : operator (called "cons") does not modify an existing list`` () = 
+    let _04_The_operator_called_cons_does_not_modify_an_existing_list () = 
         let first =
             [ "grape"; "peach" ]
         let second =
@@ -51,7 +51,7 @@ module ``10: I Have Here In My Hand A List`` =
         first |> should equal __
 
     [<Test>]
-    let ``05 Pattern-matching a list (Part 1).`` () =
+    let _05_Pattern_matching_a_list_Part_1 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let a::_ =
@@ -59,7 +59,7 @@ module ``10: I Have Here In My Hand A List`` =
         a |> should equal __
 
     [<Test>]
-    let ``06 Pattern-matching a list (Part 2).`` () =
+    let _06_Pattern_matching_a_list_Part_2 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let b::c::_ =
@@ -68,7 +68,7 @@ module ``10: I Have Here In My Hand A List`` =
         c |> should equal __
 
     [<Test>]
-    let ``07 Pattern-matching a list (Part 3).`` () =
+    let _07_Pattern_matching_a_list_Part_3 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let _::d::e =
@@ -77,7 +77,7 @@ module ``10: I Have Here In My Hand A List`` =
         e |> should equal __
 
     [<Test>]
-    let ``08 Pattern-matching a list (Part 4).`` () =
+    let _08_Pattern_matching_a_list_Part_4 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let f::_::_::g::_ =
@@ -86,7 +86,7 @@ module ``10: I Have Here In My Hand A List`` =
         g |> should equal __
 
     [<Test>]
-    let ``09 Pattern-matching a list (Part 5).`` () =
+    let _09_Pattern_matching_a_list_Part_5 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let _::_::_::h =
@@ -94,7 +94,7 @@ module ``10: I Have Here In My Hand A List`` =
         h |> should equal __
 
     [<Test>]
-    let ``10 Pattern-matching a list (Part 6).`` () =
+    let _10_Pattern_matching_a_list_Part_6 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let [i;j;k;l;m;n] =
@@ -107,7 +107,7 @@ module ``10: I Have Here In My Hand A List`` =
         n |> should equal __
 
     [<Test>]
-    let ``11 Pattern-matching a list (Part 7).`` () =
+    let _11_Pattern_matching_a_list_Part_7 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let _::o::_::[p;q;r] =
@@ -118,7 +118,7 @@ module ``10: I Have Here In My Hand A List`` =
         r |> should equal __
 
     [<Test>]
-    let ``12 Pattern-matching a list (Part 8).`` () =
+    let _12_Pattern_matching_a_list_Part_8 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let [_;s;_;_;t;_] =
@@ -127,7 +127,7 @@ module ``10: I Have Here In My Hand A List`` =
         t |> should equal __
 
     [<Test>]
-    let ``13 Pattern-matching a list (Part 9).`` () =
+    let _13_Pattern_matching_a_list_Part_9 () =
         let fruits =
             ["apple"; "peach"; "orange"; "watermelon"; "pineapple"; "tomato"]
         let k =

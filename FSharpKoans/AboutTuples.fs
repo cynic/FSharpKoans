@@ -9,21 +9,21 @@ open NUnit.Framework
     items a 2-tuple, a tuple with 5 elements is a 5-tuple, and so on.
 *)
 
-module ``06: Tuples`` = 
+module _06_Tuples = 
     [<Test>]
-    let ``01 Creating tuples`` () = 
+    let _01_Creating_tuples () = 
         let items =
             "apple", "dog"
         items |> should equal ("apple", __)
 
     [<Test>]
-    let ``02 Elements of a tuple can be different types`` () =
+    let _02_Elements_of_a_tuple_can_be_different_types () =
         let stuff =
             "Rivet", false, 22.5
         stuff |> should equal ( __ )
 
     [<Test>]
-    let ``03 Decompose a tuple using tuple pattern`` () =
+    let _03_Decompose_a_tuple_using_tuple_pattern () =
         let aida = 2020, "cranberry", false, "wait, what?"
         let a, b, c, d =
             aida
@@ -33,7 +33,7 @@ module ``06: Tuples`` =
         d |> should equal __
 
     [<Test>]
-    let ``04 Using a tuple in a match expression`` () =
+    let _04_Using_a_tuple_in_a_match_expression () =
         let result =
             match "Teresa", "pasta" with
             | name, "veggies" ->
@@ -47,13 +47,13 @@ module ``06: Tuples`` =
         result |> should equal "Teresa loves to eat pasta"   
    
     [<Test>]
-    let ``05 The type of a tuple is the contained types separated by '*' symbols`` () =
+    let _05_The_type_of_a_tuple_is_the_contained_types_separated_by_asterisk_symbols () =
         let a =
             3, 5, "hi", 'x', 7.22
         a |> should be ofType<FILL_ME_IN>
 
     [<Test>]
-    let ``06 Using the wildcard pattern to structurally decompose tuples`` () = 
+    let _06_Using_the_wildcard_pattern_to_structurally_decompose_tuples () = 
         // A single _ is a wildcard pattern, NOT a space to fill things in.
         // Reminder: A wildcard pattern successfully matches ANYTHING.
         let name, _, _, weapon_name =

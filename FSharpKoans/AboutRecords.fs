@@ -24,9 +24,9 @@ type Book =
    }
 
 // and now, the tests:
-module ``13: On the Record`` =
+module _13_On_the_Record =
     [<Test>]
-    let ``01 Creating records`` () =
+    let _01_Creating_records () =
         let myRecord =
             __
         myRecord.Title |> should equal "Steelheart"
@@ -34,7 +34,7 @@ module ``13: On the Record`` =
         myRecord.Year |> should equal 2013
 
     [<Test>]
-    let ``02 The type of a record is inferred`` () =
+    let _02_The_type_of_a_record_is_inferred () =
         let myRecord =
             { Name="Pikachu"
             ; Attack=55
@@ -49,7 +49,7 @@ module ``13: On the Record`` =
         myOtherRecord |> should be ofType<FILL_ME_IN>
 
     [<Test>]
-    let ``03 Decomposing with a record pattern`` () =
+    let _03_Decomposing_with_a_record_pattern () =
         let book =
             { Title="Dune"
             ; Author="Frank Herbert"
@@ -61,7 +61,7 @@ module ``13: On the Record`` =
         __ |> should equal 1965 // DO NOT use a . symbol in your answer
 
     [<Test>]
-    let ``04 Decomposing in a match expression`` () =
+    let _04_Decomposing_in_a_match_expression () =
         let result =
             match { Name="Raichu"; Attack=90; Defense=55 } with
             | { Name="Pikachu"; Attack=a } ->
@@ -73,7 +73,7 @@ module ``13: On the Record`` =
         result |> should equal __
 
     [<Test>]
-    let ``05 Accessing record members using dot syntax`` () =
+    let _05_Accessing_record_members_using_dot_syntax () =
         let book =
             { Title="Tigana"
             ; Author="Guy Gavriel Kay"
@@ -87,7 +87,7 @@ module ``13: On the Record`` =
         j |> should equal 1990
 
     [<Test>]
-    let ``06 Creating records based on other records`` () =
+    let _06_Creating_records_based_on_other_records () =
         let first =
             { Title="A Game of Thrones"
             ; Author="George R. R. Martin"
@@ -118,7 +118,7 @@ module ``13: On the Record`` =
     *)
 
     [<Test>]
-    let ``07 Binding composed and decomposed structures using 'as'`` () =
+    let _07_Binding_composed_and_decomposed_structures_using_'as' () =
         let f (___ as _____) =
             { __ with
                 Year = __ + 3 }
@@ -154,7 +154,7 @@ module ``13: On the Record`` =
         }
 
     [<Test>]
-    let ``08 Creating a generic record`` () =
+    let _08_Creating_a_generic_record () =
         // You need to edit the definition of MyRecord first!  It's just above this test.
         let a =
             __

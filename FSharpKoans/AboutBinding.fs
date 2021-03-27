@@ -62,21 +62,21 @@ values into.  Without an expression, there's no point in all of these bindings,
 and the F# compiler will refuse to accept nonsensical code.
 *)
 
-module ``02: About Binding`` = 
+module _02_About_Binding = 
     // this should look like code that you're familiar with, perhaps from C#.
     [<Test>]
-    let ``01 Basic 'let' binding`` () = 
+    let _01_Basic_'let'_binding () = 
         let x = 50 in // note that the syntax is more explicit about what's really going on!
             x |> should equal __
 
     [<Test>]
-    let ``02 Equivalent basic 'let' binding`` () = // this is exactly equivalent to the previous binding.
+    let _02_Equivalent_basic_'let'_binding () = // this is exactly equivalent to the previous binding.
         let x =
             50
         x |> should equal __
 
     [<Test>]
-    let ``03 There are many types of values`` () =
+    let _03_There_are_many_types_of_values () =
         let a =
             __
         let b =
@@ -97,7 +97,7 @@ module ``02: About Binding`` =
         f |> should be ofType<unit>
 
     [<Test>]
-    let ``04 We can compare values using F#'s comparison operators`` () =
+    let  _04_We_can_compare_values_using_FSharp's_comparison_operators () =
         1 |???| 2 |> should equal true // change the |???| to be an actual operator
         2 |???| 1 |> should equal true
         1 |???| 1 |> should equal true
@@ -106,11 +106,11 @@ module ``02: About Binding`` =
         () |???| () |> should equal false
 
     [<Test>]
-    let ``05 There's a `not` function instead of a `not` operator`` () =
+    let _05_There's_a_'not'_function_instead_of_a_'not'_operator () =
         __ true |> should equal false
 
     [<Test>]
-    let ``06 Nest your 'let' statements as deeply as you'd like`` () =
+    let _06_Nest_your_'let'_statements_as_deeply_as_you'd_like () =
         let a =
             let b =
                 let c =
@@ -151,7 +151,7 @@ module ``02: About Binding`` =
 *)
 
     [<Test>]
-    let ``07 Shadowing`` () =
+    let _07_Shadowing () =
         let a =
             21
         let b =
@@ -177,7 +177,7 @@ module ``02: About Binding`` =
    *)
 
     [<Test>]
-    let ``08 An identifier pattern will match anything`` () =
+    let _08_An_identifier_pattern_will_match_anything () =
         let x =
             __ // replace with an integer
         let y =
@@ -188,7 +188,7 @@ module ``02: About Binding`` =
         y |> should be ofType<string>
 
     [<Test>]
-    let ``09 A wildcard pattern will match anything`` () =
+    let _09_A_wildcard_pattern_will_match_anything () =
         let _ =
             __ // replace with an integer
         let _ =
@@ -198,7 +198,7 @@ module ``02: About Binding`` =
         ()
 
     [<Test>]
-    let ``10 Constant patterns succeed if both sides match`` () =
+    let _10_Constant_patterns_succeed_if_both_sides_match () =
         let 900 =
             __
         let "Can't win all the time" =
@@ -206,7 +206,7 @@ module ``02: About Binding`` =
         ()
 
     [<Test>]
-    let ``11 Constant patterns fail if the sides don't match exactly`` () =
+    let _11_Constant_patterns_fail_if_the_sides_don't_match_exactly () =
         // fill in something below, on the right-hand side, to make this pattern FAIL
         (fun () ->
             let "FILL ME IN" =
@@ -215,7 +215,7 @@ module ``02: About Binding`` =
         ) |> should throw typeof<MatchFailureException>
 
     [<Test>]
-    let ``12 Or patterns succeed if any pattern matches`` () =
+    let _12_Or_patterns_succeed_if_any_pattern_matches () =
         let a | a =
             __
         let 7 | 13 | 2 =

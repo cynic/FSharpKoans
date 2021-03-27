@@ -42,7 +42,7 @@ open NUnit.Framework
     or discriminated unions, generic.
 *)
 
-module ``08: Parametric polymorphism`` =
+module _08_Parametric_polymorphism =
     (*
         The next test demonstrates *type inference*.
         
@@ -58,7 +58,7 @@ module ``08: Parametric polymorphism`` =
     *)
    
     [<Test>]
-    let ``01 The type of symbols in variable patterns is inferred`` () = 
+    let _01_The_type_of_symbols_in_variable_patterns_is_inferred () = 
         let x =
             50
         let y =
@@ -76,7 +76,7 @@ module ``08: Parametric polymorphism`` =
         b |> should be ofType<FILL_ME_IN>
 
     [<Test>]
-    let ``02 id: the simplest built-in generic function`` () =
+    let _02_id_the_simplest_built_in_generic_function () =
         // `id` is the identify function: it takes an input ... and gives it back immediately.
         id 8 |> should equal __
         id 7.6 |> should equal __
@@ -84,7 +84,7 @@ module ``08: Parametric polymorphism`` =
         // id can be surprisingly useful.  Remember it :).
 
     [<Test>]
-    let ``03 Defining a generic function`` () =
+    let _03_Defining_a_generic_function () =
         let f x y =
             __
         f 4 5 |> should equal (4, 5, 5)
@@ -96,7 +96,7 @@ module ``08: Parametric polymorphism`` =
     | Thrid of ('a -> ('b * 'a * int)) // <-- this shouldn't look odd.  Functions are first-class!
 
     [<Test>]
-    let ``04 Creating a generic discriminated union (Part 1).`` () =
+    let _04_Creating_a_generic_discriminated_union_Part_1 () =
         let a =
             Secnod (6.55, 7)
         let b =
@@ -111,7 +111,7 @@ module ``08: Parametric polymorphism`` =
     | Sxi of FILL_ME_IN
 
     [<Test>]
-    let ``05 Creating a generic discriminated union (Part 2).`` () =
+    let _05_Creating_a_generic_discriminated_union_Part_2 () =
         // You need to edit the definition of MyDiscriminatedUnion first!  It's just above this test.
         let a =
             __
